@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e657f87.chunk.css",
+    "main.js": "/static/js/main.c6205d22.chunk.js",
+    "main.js.map": "/static/js/main.c6205d22.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.af4109cd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.af4109cd.js.map",
+    "static/css/2.4be38407.chunk.css": "/static/css/2.4be38407.chunk.css",
+    "static/js/2.25feb115.chunk.js": "/static/js/2.25feb115.chunk.js",
+    "static/js/2.25feb115.chunk.js.map": "/static/js/2.25feb115.chunk.js.map",
+    "static/js/3.dbca1efe.chunk.js": "/static/js/3.dbca1efe.chunk.js",
+    "static/js/3.dbca1efe.chunk.js.map": "/static/js/3.dbca1efe.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4be38407.chunk.css.map": "/static/css/2.4be38407.chunk.css.map",
+    "static/css/main.2e657f87.chunk.css.map": "/static/css/main.2e657f87.chunk.css.map",
+    "static/js/2.25feb115.chunk.js.LICENSE.txt": "/static/js/2.25feb115.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Arvo.8f08aeac.woff",
+    "static/media/bg.5e7b2da8.png": "/static/media/bg.5e7b2da8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af4109cd.js",
+    "static/css/2.4be38407.chunk.css",
+    "static/js/2.25feb115.chunk.js",
+    "static/css/main.2e657f87.chunk.css",
+    "static/js/main.c6205d22.chunk.js"
+  ]
+}
