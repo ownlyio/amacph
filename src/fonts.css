@@ -1,105 +1,48 @@
 @font-face {
-  font-family: Rubik-Regular;
-  src: url("./fonts/Rubix/Rubik-Regular.ttf");
+  font-family: 'Arvo';
+  src: url('./fonts/Arvo-Bold.woff2') format('woff2'),
+      url('./fonts/Arvo-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-.rubik-regular {
-  font-family: Rubik-Regular;
-}
-@font-face {
-  font-family: Rubik-Bold;
-  src: url("./fonts/Rubix/Rubik-Bold.ttf");
-}
-.rubik-bold {
-  font-family: Rubik-Bold;
+.arvo-bold {
+  font-family: Arvo;
+  font-weight: bold;
 }
 @font-face {
-  font-family: Rubik-Black;
-  src: url("./fonts/Rubix/Rubik-Black.ttf");
+  font-family: 'Arvo';
+  src: url('./fonts/Arvo.woff2') format('woff2'),
+      url('./fonts/Arvo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-.rubik-black {
-  font-family: Rubik-Black;
-}
-@font-face {
-  font-family: NeogroteskEss-Regular;
-  src: url("./fonts/Neo/NeogroteskEss-Regular.otf");
-}
-.neo-regular {
-  font-family: NeogroteskEss-Regular;
+.arvo {
+  font-family: Arvo;
 }
 @font-face {
-  font-family: NeogroteskEss-Bold;
-  src: url("./fonts/Neo/NeogroteskEss-Bold.otf");
+  font-family: 'Arvo';
+  src: url('./fonts/Arvo-Italic.woff2') format('woff2'),
+      url('./fonts/Arvo-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
-.neo-bold {
-  font-family: NeogroteskEss-Bold;
-}
-@font-face {
-  font-family: NeogroteskEss-Black;
-  src: url("./fonts/Neo/NeogroteskEss-Black.otf");
-}
-.neo-black {
-  font-family: NeogroteskEss-Black;
+.arvo-italic {
+  font-family: Arvo;
+  font-style: italic;
 }
 @font-face {
-  font-family: NeogroteskEss-RegularIt;
-  src: url("./fonts/Neo/NeogroteskEss-RegularIt.otf");
+  font-family: 'Arvo';
+  src: url('./fonts/Arvo-BoldItalic.woff2') format('woff2'),
+      url('./fonts/Arvo-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
-.neo-regular-italic {
-  font-family: NeogroteskEss-RegularIt;
-}
-@font-face {
-  font-family: NeogroteskEss-Light;
-  src: url("./fonts/Neo/NeogroteskEss-Light.otf");
-}
-.neo-light {
-  font-family: NeogroteskEss-Light;
-}
-@font-face {
-  font-family: NeogroteskEss-LightIt;
-  src: url("./fonts/Neo/NeogroteskEss-LightIt.otf");
-}
-.neo-light-italic {
-  font-family: NeogroteskEss-LightIt;
-}
-@font-face {
-  font-family: Alegreya-Italic;
-  src: url("./fonts/Alegreya/Alegreya-Italic.ttf");
-}
-.alegreya-italic {
-  font-family: Alegreya-Italic;
-}
-@font-face {
-  font-family: Alegreya-BoldItalic;
-  src: url("./fonts/Alegreya/Alegreya-BoldItalic.ttf");
-}
-.alegreya-bold-italic {
-  font-family: Alegreya-BoldItalic;
-}
-@font-face {
-  font-family: Alegreya-Regular;
-  src: url("./fonts/Alegreya/Alegreya-Regular.ttf");
-}
-.alegreya-regular {
-  font-family: Alegreya-Regular;
-}
-@font-face {
-  font-family: Alegreya-Bold;
-  src: url("./fonts/Alegreya/Alegreya-Bold.ttf");
-}
-.alegreya-bold {
-  font-family: Alegreya-Bold;
-}
-@font-face {
-  font-family: Helvetica-Roman;
-  src: url("./fonts/Helvetica/HelveticaLTStd-Roman_0.otf");
-}
-.helvetica-roman {
-  font-family: Helvetica-Roman;
-}
-@font-face {
-  font-family: Helvetica-Light;
-  src: url("./fonts/Helvetica/HelveticaLTStd-Light_0.otf");
-}
-.helvetica-light {
-  font-family: Helvetica-Light;
+.arvo-bold-italic {
+  font-family: Arvo;
+  font-weight: bold;
+  font-style: italic;
 }
