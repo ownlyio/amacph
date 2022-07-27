@@ -2538,6 +2538,14 @@ body {
   color: #106587 !important;
   text-decoration: underline;
 }
+.link-color-5 {
+  color: black !important;
+  text-decoration: none;
+}
+.link-color-5:hover {
+  color: #f19150 !important;
+  text-decoration: underline;
+}
 .btn-custom-1 {
   background-color: #bc3426 !important;
   color: #ffffff !important;
