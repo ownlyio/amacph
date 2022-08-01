@@ -48,7 +48,7 @@ function Banner() {
                                     <form className="app-bbm-form" onSubmit={submitForm}>
                                         <div className="d-flex align-items-center flex-wrap">
                                             <div className="app-form app-input-wrapper d-flex flex-fill justify-content-center">
-                                                <input type="email" name="email_address" className="form-control d-block px-3 py-1 font-size-90" style={{"borderRadius": "5px 0 0 5px"}} placeholder="Your email address" required onChange={(e) => setEmailAdd(e.target.value)} />
+                                                <input id="emailAdd" type="email" name="email_address" className="form-control d-block px-3 py-1 font-size-90" style={{"borderRadius": "5px 0 0 5px"}} placeholder="Your email address" required onChange={(e) => setEmailAdd(e.target.value)} />
                                             </div>
                                             <div className="app-form app-btn-form-wrapper">
                                                 <button type="submit" className="btn btn-custom-7 px-3 py-1 font-size-90" style={{"letterSpacing": "0.05em", "borderRadius": "0 5px 5px 0"}}>Join VIP List</button>
