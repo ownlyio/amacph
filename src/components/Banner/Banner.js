@@ -1,33 +1,36 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect } from 'react'
+import { Button, Modal } from 'react-bootstrap'
+import { faCheckCircle, faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios'
 import './Banner.css'
 
 import background from '../../img/bg.png'
 
 function Banner() {
-    // const [emailAdd, setEmailAdd] = useState("")
-    // const [showSubscribed, setShowSubscribed] = useState(false);
-    // const handleCloseSubscribed = () => setShowSubscribed(false);
-    // const handleShowSubscribed = () => setShowSubscribed(true);
-    // const [showErrorEmail, setShowErrorEmail] = useState(false);
-    // const handleCloseErrorEmail = () => setShowErrorEmail(false);
-    // const handleShowErrorEmail = () => setShowErrorEmail(true);
+    const [emailAdd, setEmailAdd] = useState("")
+    const [showSubscribed, setShowSubscribed] = useState(false);
+    const handleCloseSubscribed = () => setShowSubscribed(false);
+    const handleShowSubscribed = () => setShowSubscribed(true);
+    const [showErrorEmail, setShowErrorEmail] = useState(false);
+    const handleCloseErrorEmail = () => setShowErrorEmail(false);
+    const handleShowErrorEmail = () => setShowErrorEmail(true);
 
-    // const submitForm = (e) => {
-    //     e.preventDefault()
+    const submitForm = (e) => {
+        e.preventDefault()
 
-    //     let re = /^[ ]*([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})[ ]*$/i;
+        let re = /^[ ]*([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})[ ]*$/i;
     
-    //     if (re.test(emailAdd)) {
-    //         axios.post('https://ownly.tk/api/store-mustachio-subscriber', {email_address: emailAdd}).then(res => {
-    //             document.getElementById("emailAdd").value = ""
-    //             setEmailAdd("")
-    //             handleShowSubscribed()
-    //         })
-    //     } else {
-    //         handleShowErrorEmail()
-    //     }
-    // }
+        if (re.test(emailAdd)) {
+            axios.post('https://ownly.market/api/email-signup', {email: emailAdd, type: 'amacph'}).then(res => {
+                document.getElementById("emailAdd").value = ""
+                setEmailAdd("")
+                handleShowSubscribed()
+            })
+        } else {
+            handleShowErrorEmail()
+        }
+    }
 
     return (
         <section id="app" className="background-image-cover h-screen" style={{"backgroundImage": `url(${background})`}}>
@@ -38,9 +41,9 @@ function Banner() {
                         <h1 className="app-title text-center font-size-280 font-size-md-350 font-size-lg-430 font-size-xl-500 text-white arvo-bold">ALBAY MULTIMEDIA ARTS CONVENTION</h1>
                         <p className="app-sub text-center font-size-150 font-size-md-180 font-size-lg-230 font-size-xl-300 text-white arvo-italic mb-5">October 8-9, 2022 | Ayala Malls Legazpi</p>
 
-                        {/* <div className="row justify-content-center">
+                        <div className="row justify-content-center">
                             <div className="col-lg-8 text-center">
-                                <p className="text-white font-size-120 font-size-sm-130 text-center px-md-5 mb-4">Wanna be the first to get notified when we announce the details of the first-ever Bicol Blockchain Conference? Join our VIP List to be first to know.</p>
+                                <p className="text-white font-size-120 font-size-sm-140 text-center px-md-5 mb-4">Wanna be the first to get notified when we announce the details of the next AMAC? Join our VIP List to be first to know.</p>
                                 <div className="px-lg-5 mx-lg-5">
                                     <form className="app-bbm-form" onSubmit={submitForm}>
                                         <div className="d-flex align-items-center flex-wrap">
@@ -54,10 +57,40 @@ function Banner() {
                                     </form>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>
+
+            {/* Modal for successful subscription */}
+            <Modal show={showSubscribed} onHide={handleCloseSubscribed} size="sm" centered>
+                <Modal.Body>
+                    <div className="text-center mb-3">
+                        <FontAwesomeIcon color="green" size="6x" icon={faCheckCircle} />
+                    </div>
+                    <p className="text-center text-lg">Thank you for subscribing!</p>
+                </Modal.Body>
+                <Modal.Footer className="justify-content-center">
+                    <Button className="font-w-hermann w-hermann-reg" variant="secondary" onClick={handleCloseSubscribed}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal> 
+
+            {/* Modal for error in email */}
+            <Modal show={showErrorEmail} onHide={handleCloseErrorEmail} size="sm" centered>
+                <Modal.Body>
+                    <div className="text-center mb-3">
+                        <FontAwesomeIcon color="red" size="6x" icon={faExclamationCircle} />
+                    </div>
+                    <p className="text-center text-lg">Please provide a valid email address and try again.</p>
+                </Modal.Body>
+                <Modal.Footer className="justify-content-center">
+                    <Button className="font-w-hermann w-hermann-reg" variant="secondary" onClick={handleCloseErrorEmail}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal> 
         </section>
     );
 }
