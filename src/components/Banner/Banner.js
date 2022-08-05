@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect } from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import { faCheckCircle, faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import axios from 'axios'
 import './Banner.css'
 
@@ -58,6 +59,26 @@ function Banner() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="app-socmed-icons py-4">
+                <div className="d-flex justify-content-center align-items-center w-100">
+                    <div className="mx-3">
+                        <a href="https://web.facebook.com/amacphilippines" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon color="white" size="2x" icon={faFacebookF} />
+                        </a>
+                    </div>
+                    <div className="mx-3">
+                        <a href="https://www.instagram.com/amacphilippines" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon color="white" size="2x" icon={faInstagram} />
+                        </a>
+                    </div>
+                    <div className="mx-3">
+                        <a href="https://twitter.com/amac_ph" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon color="white" size="2x" icon={faTwitter} />
+                        </a>
                     </div>
                 </div>
             </div>
