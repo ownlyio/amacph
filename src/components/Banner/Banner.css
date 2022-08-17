@@ -17,6 +17,10 @@
     border-color: #f19150 !important;
 }
 
+.partner-img {
+    width: 25%;
+}
+
 @media (max-width: 480px) {
     .app-form {
         width: 100%;
@@ -24,5 +28,9 @@
 
     .app-btn-form-wrapper {
         margin-top: 20px;
+    }
+
+    .partner-img {
+        width: 30%;
     }
 }

@@ -7,6 +7,7 @@ import axios from 'axios'
 import './Banner.css'
 
 import background from '../../img/bg.png'
+import ayalaMallsLeg from '../../img/ayala-malls-legazpi.webp'
 
 function Banner() {
     const [emailAdd, setEmailAdd] = useState("")
@@ -39,12 +40,12 @@ function Banner() {
                 <div className="overlay"></div>
                 <div className="d-flex justify-content-center align-items-center h-full">
                     <div className="app-wrap">
-                        <h1 className="app-title text-center font-size-280 font-size-md-350 font-size-lg-430 font-size-xl-500 text-white arvo-bold">ALBAY MULTIMEDIA ARTS CONVENTION</h1>
-                        <p className="app-sub text-center font-size-150 font-size-md-180 font-size-lg-230 font-size-xl-300 text-white arvo-italic mb-5">October 8-9, 2022 | Ayala Malls Legazpi</p>
+                        <h1 className="app-title text-center font-size-220 font-size-md-350 font-size-lg-430 font-size-xl-500 text-white arvo-bold">ALBAY MULTIMEDIA ARTS CONVENTION</h1>
+                        <p className="app-sub text-center font-size-120 font-size-md-180 font-size-lg-230 font-size-xl-300 text-white arvo-italic mb-5">October 8-9, 2022 | Ayala Malls Legazpi</p>
 
                         <div className="row justify-content-center">
                             <div className="col-lg-8 text-center">
-                                <p className="text-white font-size-120 font-size-sm-140 text-center px-md-5 mb-4">Wanna be the first to get notified when we announce the details of the next AMAC? Join our VIP List to be first to know.</p>
+                                <p className="text-white font-size-100 font-size-sm-140 text-center px-md-5 mb-4">Wanna be the first to get notified when we announce the details of the next AMAC? Join our VIP List to be first to know.</p>
                                 <div className="px-lg-5 mx-lg-5">
                                     <form className="app-bbm-form" onSubmit={submitForm}>
                                         <div className="d-flex align-items-center flex-wrap mb-2">
@@ -61,13 +62,20 @@ function Banner() {
                                                 <input className="form-check-input" type="checkbox" id="agreement" required />
                                             </div>
                                             <div className="ps-1">
-                                                <label className="form-check-label font-size-90 text-white" for="agreement">
+                                                <label className="form-check-label font-size-80 text-white" for="agreement">
                                                 By joining our Ownly VIP list, you agree to receive updates from Ownly for our upcoming IRL events. You can opt out of our marketing emails anytime. Your email will be stored on our database and will not be shared with any third-party.
                                                 </label>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-2 mt-sm-3 mt-lg-5">
+                            <p className="text-center font-size-110 font-size-md-140 font-size-lg-180 font-size-xl-200 text-white arvo-italic mb-2">Co-presented by:</p>
+                            <div className="partner-img mx-auto">
+                                <img src={ayalaMallsLeg} alt="Ayala Malls Legazpi" className="w-100" />
                             </div>
                         </div>
                     </div>
