@@ -1,0 +1,36 @@
+#app {
+    position: relative;
+}
+
+.app-title {
+    font-weight: 600;
+}
+
+.app-socmed-icons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+ 
+.form-check-input:checked {
+    background-color: #f19150 !important;
+    border-color: #f19150 !important;
+}
+
+.partner-img {
+    width: 25%;
+}
+
+@media (max-width: 480px) {
+    .app-form {
+        width: 100%;
+    }
+
+    .app-btn-form-wrapper {
+        margin-top: 20px;
+    }
+
+    .partner-img {
+        width: 30%;
+    }
+}
