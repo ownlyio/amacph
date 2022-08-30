@@ -12,7 +12,8 @@ import ApplySponsor from './components/ApplySponsor/ApplySponsor'
 import FAQ from './components/FAQ/FAQ'
 import Footer from './components/Footer/Footer'
 
-// pages components
+// pages
+import EventDetails from './pages/EventDetails/EventDetails'
 
 function App() {
     return (
@@ -27,6 +28,9 @@ function App() {
                     <ApplyMerchant />
                     <ApplySponsor />
                     <FAQ />
+                </Route>
+                <Route exact path="/event-details">
+                    <EventDetails />
                 </Route>
                 <Footer />
             </Switch>
