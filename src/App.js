@@ -18,8 +18,8 @@ import EventDetails from './pages/EventDetails/EventDetails'
 function App() {
     return (
         <Router basename={process.env.PUBLIC_URL}>
+            <Navbar />
             <Switch>
-                <Navbar />
                 <Route exact path="/">
                     <Banner />
                     <About />
@@ -32,8 +32,8 @@ function App() {
                 <Route exact path="/event-details">
                     <EventDetails />
                 </Route>
-                <Footer />
             </Switch>
+            <Footer />
         </Router>
     );
 }
