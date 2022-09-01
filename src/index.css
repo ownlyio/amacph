@@ -2498,10 +2498,10 @@ body {
   color: #1c1c24 !important;
 }
 .link-color-1 {
-  color: #bc3326 !important;
+  color: #888888 !important;
 }
 .link-color-1:hover {
-  color: #a32c21 !important;
+  color: #ff7158 !important;
   text-decoration: underline;
 }
 button {
