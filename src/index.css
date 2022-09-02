@@ -2504,6 +2504,9 @@ body {
   color: #ff7158 !important;
   text-decoration: underline;
 }
+.bg-color-1 {
+  background-color: #ffb600 !important;
+}
 button {
   font-family: Arvo !important;
   font-size: 1.4em !important;
@@ -2538,6 +2541,16 @@ button {
 .btn-custom-3:active,
 .btn-custom-3:focus {
   background-color: #ff6047 !important;
+  color: #ffffff !important;
+}
+.btn-custom-4 {
+  background-color: #c83e38 !important;
+  color: #ffffff !important;
+}
+.btn-custom-4:hover,
+.btn-custom-4:active,
+.btn-custom-4:focus {
+  background-color: #b72d27 !important;
   color: #ffffff !important;
 }
 .cursor-pointer {
