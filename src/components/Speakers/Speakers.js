@@ -1,11 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedinIn, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './Speakers.css'
 
 import speakerBg from '../../img/speaker_bg.png'
 import speaker1 from '../../img/speakers/speaker1.jpg'
 import speaker2 from '../../img/speakers/speaker2.jpg'
 import speaker3 from '../../img/speakers/speaker3.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faLinkedinIn, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function Speakers() {
     return (
