@@ -13,7 +13,7 @@ export default function ApplyMerchant() {
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="merchant-gform">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPgYfe66J7d4JSqj3RmyraX5mLahxVUcWLJ7ImDyftvccNOQ/viewform?embedded=true" width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            <iframe title="Apply as Merchant form" src="https://docs.google.com/forms/d/e/1FAIpQLSfPgYfe66J7d4JSqj3RmyraX5mLahxVUcWLJ7ImDyftvccNOQ/viewform?embedded=true" width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                         </div>
                     </div>
                 </div>

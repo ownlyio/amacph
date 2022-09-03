@@ -2478,7 +2478,9 @@ body {
 .line-height-150 {
   line-height: 1.5em !important;
 }
-
+.divider-1 {
+  color: #c83e38 !important;
+}
 .text-color-1 {
   color: #BBEBD6 !important;
 }
@@ -2585,4 +2587,8 @@ button {
 
 .text-right {
   text-align: right;
+}
+
+iframe {
+  width: 100% !important;
 }

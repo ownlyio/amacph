@@ -8,6 +8,7 @@ import About from './components/About/About'
 import Speakers from './components/Speakers/Speakers'
 import ApplyTicket from './components/ApplyTicket/ApplyTicket'
 import ApplyMerchant from './components/ApplyMerchant/ApplyMerchant'
+import Sponsors from './components/Sponsors/Sponsors'
 import ApplySponsor from './components/ApplySponsor/ApplySponsor'
 import FAQ from './components/FAQ/FAQ'
 import Footer from './components/Footer/Footer'
@@ -26,6 +27,7 @@ function App() {
                     <Speakers />
                     <ApplyTicket />
                     <ApplyMerchant />
+                    <Sponsors />
                     <ApplySponsor />
                     <FAQ />
                 </Route>
