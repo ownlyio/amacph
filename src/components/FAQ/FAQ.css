@@ -6,13 +6,14 @@
 
 /* content */
 .accordion {
+    margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 }
 
 .accordion-button {
-    font-size: 1em !important;
+    font-size: 0.8em !important;
     letter-spacing: normal;
     font-weight: normal;
 }

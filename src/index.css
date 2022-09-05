@@ -2519,7 +2519,7 @@ body {
 .bg-color-3 {
   background-color: #BBEBD6 !important;
 }
-button {
+button.def {
   font-family: Arvo !important;
   font-size: 1.4em !important;
   font-weight: bold;

@@ -18,7 +18,7 @@ export default function ApplyTicket() {
 
                         <p className="text-center text-md-start font-size-lg-140 text-white ticket-sub mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 
-                        <button className="btn btn-custom-4 px-5 about-btn">BUY NOW!</button>
+                        <button className="def btn btn-custom-4 px-5 about-btn">BUY NOW!</button>
                     </div>
                     <div className="col-12 col-md-8">
                         <p className="text-center font-size-lg-230 text-white arvo-bold ticket-sub mb-5">INCLUSIONS</p>

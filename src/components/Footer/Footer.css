@@ -1,3 +1,18 @@
 #amac-footer {
     padding: 3em 0;
 }
+
+.footer-icon-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
+    border-radius: 50%;    
+    padding: 7px;
+    transition: all 0.5s ease;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    background-color: #ff7158;
+    border-color: #ff7158;
+}

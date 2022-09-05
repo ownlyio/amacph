@@ -13,7 +13,7 @@ export default function Banner() {
                     </div>
                     <p className="font-size-lg-280 arvo-bold text-center text-color-1 banner-title">ALBAY MULTIMEDIA ARTS CONVENTION</p>
                     <p className="font-size-lg-230 arvo-bold text-center text-white mb-5 banner-sub">October 8-9, 2022 | Ayala Malls Legazpi</p>
-                    <button className="btn btn-custom-1 px-5 banner-btn">BUY TICKETS</button>
+                    <button className="def btn btn-custom-1 px-5 banner-btn">BUY TICKETS</button>
                 </div>
             </div>
         </section>
