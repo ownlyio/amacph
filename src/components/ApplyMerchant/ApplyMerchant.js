@@ -1,6 +1,7 @@
 import './ApplyMerchant.css'
 
 import merchant from '../../img/pictures/merchant.jpg'
+import merchant1 from '../../img/pictures/merchant-pic.jpg'
 
 export default function ApplyMerchant() {
     return (
@@ -9,11 +10,13 @@ export default function ApplyMerchant() {
                 <div className="row align-items-center">
                     <div className="col-12 col-md-6">
                         <p className="text-center text-md-start font-size-lg-280 text-color-1 arvo-bold merchant-title mb-4">APPLY AS MERCHANT</p>
-                        <p className="text-center text-md-start font-size-lg-140 text-white merchant-sub mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p className="text-center text-md-start font-size-lg-140 text-white merchant-sub mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfucKmPeebypjOA3dC8anxgCyrM37nRYv1RxbPvuQSppRNVNg/viewform?usp=sf_link" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5 merchant-btn">APPLY NOW!</a>
                     </div>
                     <div className="col-12 col-md-6">
-                        <div className="merchant-gform">
-                            <iframe title="Apply as Merchant form" src="https://docs.google.com/forms/d/e/1FAIpQLSfPgYfe66J7d4JSqj3RmyraX5mLahxVUcWLJ7ImDyftvccNOQ/viewform?embedded=true" width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        <div className="merchant-img">
+                            <img src={merchant1} alt="Merchant of AMAC" className="w-100" />
                         </div>
                     </div>
                 </div>
