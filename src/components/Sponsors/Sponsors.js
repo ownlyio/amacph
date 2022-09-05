@@ -1,6 +1,7 @@
 import './Sponsors.css'
 
-import coPresenter1 from '../../img/sponsors/ayala-malls-legazpi.webp'
+import coPresenter1 from '../../img/sponsors/ownly.png'
+import coPresenter2 from '../../img/sponsors/ayala-malls-legazpi.webp'
 
 export default function Sponsors() {
     return (
@@ -11,11 +12,14 @@ export default function Sponsors() {
                     
                     {/* Co-Presenters */}
                     <div className="sponsors-section">
-                        <p className="text-center font-size-lg-140 text-color-5 arvo-italic sponsor-title mb-1">Co-presented by</p>
+                        <p className="text-center font-size-lg-140 text-color-5 arvo-italic sponsor-title mb-1">Organized and Co-presented by</p>
                         <div className="sponsors-wrap">
-                            <div className="sponsors-row d-flex justify-content-evenly my-5 flex-wrap">
+                            <div className="sponsors-row d-flex justify-content-evenly align-items-center my-5 flex-wrap">
                                 <div className="sponsor-item mx-3">
                                     <img src={coPresenter1} alt="Sponsor Logo" className="w-100" />
+                                </div>
+                                <div className="sponsor-item mx-3">
+                                    <img src={coPresenter2} alt="Sponsor Logo" className="w-100" />
                                 </div>
                             </div>
                         </div>
@@ -25,7 +29,7 @@ export default function Sponsors() {
                     {/* <div className="sponsors-section">
                         <p className="text-center font-size-lg-140 text-color-5 arvo-italic sponsor-title mb-1">Major Sponsors</p>
                         <div className="sponsors-wrap">
-                            <div className="sponsors-row d-flex justify-content-evenly my-5 flex-wrap">
+                            <div className="sponsors-row d-flex justify-content-evenly align-items-center my-5 flex-wrap">
                                 <div className="sponsor-item mx-3">
                                     <img src={logo} alt="Sponsor Logo" className="w-100" />
                                 </div>

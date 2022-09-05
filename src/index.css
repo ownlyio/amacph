@@ -2510,6 +2510,13 @@ body {
   color: #ff7158 !important;
   text-decoration: underline;
 }
+.link-color-2 {
+  color: #888888 !important;
+} 
+.link-color-2:hover {
+  color: #ff7158 !important;
+  text-decoration: underline;
+}
 .bg-color-1 {
   background-color: #ffb600 !important;
 }

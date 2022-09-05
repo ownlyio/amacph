@@ -23,16 +23,16 @@ export default function Speakers() {
                             <p className="text-center font-size-lg-130 text-color-5 arvo-italic speaker-job">Founder, Edilta</p>
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faFacebookF} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faTwitter} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faInstagram} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faLinkedinIn} size="md" />
                                 </a>
                             </div>
@@ -47,16 +47,16 @@ export default function Speakers() {
                             <p className="text-center font-size-lg-130 text-color-5 arvo-italic speaker-job">Lead Designer, Payol</p>
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faFacebookF} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faTwitter} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faInstagram} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faLinkedinIn} size="md" />
                                 </a>
                             </div>
@@ -71,16 +71,16 @@ export default function Speakers() {
                             <p className="text-center font-size-lg-130 text-color-5 arvo-italic speaker-job">Development Expert</p>
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faFacebookF} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faTwitter} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faInstagram} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faLinkedinIn} size="md" />
                                 </a>
                             </div>
@@ -95,16 +95,16 @@ export default function Speakers() {
                             <p className="text-center font-size-lg-130 text-color-5 arvo-italic speaker-job">Founder, Cards.IO</p>
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faFacebookF} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faTwitter} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faInstagram} size="md" />
                                 </a>
-                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-1 speaker-socmed-icon">
+                                <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
                                     <FontAwesomeIcon icon={faLinkedinIn} size="md" />
                                 </a>
                             </div>

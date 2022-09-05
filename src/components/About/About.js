@@ -7,13 +7,13 @@ export default function About() {
         <section id="amac-about">
             <div className="container">
                 <div className="row align-items-center mb-5">
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 order-2 order-md-1">
                         <p className="text-center text-md-start font-size-lg-280 text-color-4 arvo-bold about-title mb-4">What is AMAC?</p>
                         <p className="text-center text-md-start font-size-lg-140 text-color-5 about-desc mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
 
                         {/* <button className="def btn btn-custom-2 px-5 about-btn">LEARN MORE</button> */}
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 order-1 order-md-2">
                         <div className="about-img">
                             <img src={about1} alt="About AMAC" className="w-100" />
                         </div>
