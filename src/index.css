@@ -2478,9 +2478,6 @@ body {
 .line-height-150 {
   line-height: 1.5em !important;
 }
-.divider-1 {
-  color: #c83e38 !important;
-}
 .text-color-1 {
   color: #BBEBD6 !important;
 }
@@ -2506,8 +2503,21 @@ body {
   color: #ff7158 !important;
   text-decoration: underline;
 }
+.link-color-1 {
+  color: #ffffff !important;
+} 
+.link-color-1:hover {
+  color: #ff7158 !important;
+  text-decoration: underline;
+}
 .bg-color-1 {
   background-color: #ffb600 !important;
+}
+.bg-color-2 {
+  background-color: #2c2c2c !important;
+}
+.bg-color-3 {
+  background-color: #BBEBD6 !important;
 }
 button {
   font-family: Arvo !important;
