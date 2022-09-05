@@ -4,12 +4,40 @@
     background: linear-gradient(39deg, rgba(255,182,0,1) 0%, rgba(255,113,88,1) 100%);
 }
 
+.ticket-wrap {
+    margin-bottom: 5em;
+}
+
 .ticket-title {
     margin-bottom: 2em;
 }
 
 .ticket-img {
-    width: 70%;
+    width: 250px;
     transform: rotateZ(-10deg);
     margin-bottom: 3em;
+}
+
+.ticket-range-wrap {
+    width: 300px;
+    margin: 0 auto 0.6em;
+}
+
+.ticket-range-outer,
+.ticket-range-inner {
+    height: 10px;
+}
+
+.ticket-range-outer {
+    width: 100%;
+    background: #ddd;
+}
+
+.ticket-range-inner {
+    background: rgb(255,113,88);
+    background: linear-gradient(95deg, rgba(255,113,88,1) 0%, rgba(200,62,56,1) 100%);
+}
+
+.ticket-inclusion-item {
+    width: 30%;
 }
