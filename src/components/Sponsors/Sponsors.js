@@ -4,7 +4,7 @@ import coPresenter1 from '../../img/sponsors/ayala-malls-legazpi.webp'
 
 export default function Sponsors() {
     return (
-        <section id="amac-apply-sponsor">
+        <section id="sponsors">
             <div className="container">
                 <div className="sponsors-lists mb-5">
                     <p className="text-center font-size-lg-280 text-color-4 arvo-bold sponsor-title mb-5">Our Sponsors</p>

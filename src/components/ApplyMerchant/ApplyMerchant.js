@@ -4,7 +4,7 @@ import merchant from '../../img/pictures/merchant.jpg'
 
 export default function ApplyMerchant() {
     return (
-        <section id="amac-apply-merchant" className="background-image-cover" style={{"backgroundImage": `url(${merchant})`}}>
+        <section id="merchant" className="background-image-cover" style={{"backgroundImage": `url(${merchant})`}}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-12 col-md-6">

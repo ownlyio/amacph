@@ -1,0 +1,46 @@
+#header {
+    height: 70px;
+    z-index: 1000000;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffb600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.amac-nav-logo {
+    width: 47px;
+}
+
+.amac-nav-logo-mobile {
+    width: 50%;
+    margin: 0 auto 30px;
+}
+
+#amac-nav li {
+    list-style: none;
+}
+
+#amac-nav li:not(:first-child) {
+    margin-left: 20px;
+}
+
+#amac-nav li a:not(.amac-nav-btn) {
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+#amac-nav li a:not(.amac-nav-btn):hover,
+#amac-nav li a:not(.amac-nav-btn):focus {
+    color: #c83e38 !important;
+}
+
+.amac-nav-btn {
+    line-height: 1em;
+}
+
+.amac-nav-btn-mobile {
+    font-size: 1.1em !important;
+}

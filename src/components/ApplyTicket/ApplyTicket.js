@@ -22,7 +22,7 @@ export default function ApplyTicket() {
     }
 
     return (
-        <section id="amac-apply-ticket">
+        <section id="tickets">
             <div className="container">
                 <p className="text-center font-size-lg-280 text-white arvo-bold ticket-title">BUY TICKETS</p>
 

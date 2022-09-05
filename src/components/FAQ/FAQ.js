@@ -2,7 +2,7 @@ import './FAQ.css'
 
 export default function FAQ() {
     return (
-        <section id="amac-faq">
+        <section id="faq">
             <div className="container">
                 <p className="text-center font-size-lg-280 text-white arvo-bold faq-title mb-4">FREQUENTLY ASKED QUESTIONS</p>
 
