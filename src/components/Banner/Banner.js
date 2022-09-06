@@ -8,6 +8,7 @@ import './Banner.css'
 
 import background from '../../img/bg.png'
 import ayalaMallsLeg from '../../img/ayala-malls-legazpi.webp'
+import ownlyLogo from '../../img/ownly.png'
 
 function Banner() {
     const [emailAdd, setEmailAdd] = useState("")
@@ -73,12 +74,17 @@ function Banner() {
                         </div>
 
                         <div className="mt-2 mt-sm-3 mt-lg-5">
-                            <p className="text-center font-size-110 font-size-md-140 font-size-lg-180 font-size-xl-200 text-white arvo-italic mb-2">Co-presented by:</p>
-                            <div className="partner-img mx-auto">
-                                <img src={ayalaMallsLeg} alt="Ayala Malls Legazpi" className="w-100" />
+                            <p className="text-center font-size-110 font-size-md-140 font-size-lg-180 font-size-xl-200 text-white arvo-italic mb-2">Organized and Co-presented by:</p>
+                            <div className="d-flex justify-content-center align-items-center w-1/2 mx-auto">
+                                <div className="partner-img mx-auto">
+                                    <img src={ownlyLogo} alt="Ownly" className="w-100" />
+                                </div>
+                                <div className="partner-img mx-auto">
+                                    <img src={ayalaMallsLeg} alt="Ayala Malls Legazpi" className="w-100" />
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
 
