@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGifts, faUsers, faTicketAlt, faCertificate, faHeart } from '@fortawesome/free-solid-svg-icons';
-import { Modal, Button } from 'react-bootstrap'
-import { useState } from 'react'
+import { Modal } from 'react-bootstrap'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 import './ApplyTicket.css'
 
 import ticket from '../../img/ticket.png'
@@ -9,11 +10,12 @@ import ticket from '../../img/ticket.png'
 export default function ApplyTicket() {
     const [state, setState] = useState({
         maxTickets: 200,
-        availableTickets: 180,
+        availableTickets: 200,
+        percentageAvailable: 100,
         isSoldOut: false
     })
 
-    const [showRegister, setShowRegister] = useState(true)
+    const [showRegister, setShowRegister] = useState(false)
     const handleCloseRegister = () => setShowRegister(false)
     const handleShowRegister = () => setShowRegister(true)
 
@@ -22,13 +24,24 @@ export default function ApplyTicket() {
         setState(prevState => ({...prevState, [name]: value}))
     }
 
-    const computeAvailableTicketsPercent = () => {
-        return (state.availableTickets / state.maxTickets) * 100
+    const computeAvailableTicketsPercent = async () => {
+        const verifiedRegistrants = await axios.get('https://ownly.market/api/amac-verified-registrants-count')
+        const count = verifiedRegistrants.data.count
+        const availableTickets = state.maxTickets - count
+
+        _setState("availableTickets", availableTickets)
+        _setState("percentageAvailable", (availableTickets/state.maxTickets) * 100)
+
+        if (count === state.maxTickets) _setState("isSoldOut", true)
     }
 
     const submitForm = async (e) => {
         e.preventDefault()
     }
+
+    useEffect(() => {
+        computeAvailableTicketsPercent()
+    }, [])
 
     return (
         <section id="tickets">
@@ -47,7 +60,7 @@ export default function ApplyTicket() {
                     {/* Range */}
                     <div className="ticket-range-wrap">
                         <div className="ticket-range-outer">
-                            <div className="ticket-range-inner" style={{"width": `${computeAvailableTicketsPercent()}%`}}></div>
+                            <div className="ticket-range-inner" style={{"width": `${state.percentageAvailable}%`}}></div>
                         </div>
                     </div>
                     <p className="text-center font-size-lg-120 text-white ticket-available-qty">{state.availableTickets}/{state.maxTickets}</p>
