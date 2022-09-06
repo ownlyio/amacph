@@ -2517,6 +2517,13 @@ body {
   color: #ff7158 !important;
   text-decoration: underline;
 }
+.link-color-3 {
+  color: #1c1c24 !important;
+} 
+.link-color-3:hover {
+  color: #c83e38 !important;
+  text-decoration: underline;
+}
 .bg-color-1 {
   background-color: #ffb600 !important;
 }
@@ -2609,4 +2616,8 @@ a.def {
 
 iframe {
   width: 100% !important;
+}
+
+.resize-none {
+  resize: none; 
 }
