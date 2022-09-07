@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGifts, faUsers, faTicketAlt, faCertificate, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faGifts, faUsers, faTicketAlt, faCertificate, faHeart, faCheckCircle, faExclamationCircle, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { Modal } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
@@ -12,16 +12,22 @@ export default function ApplyTicket() {
         maxTickets: 200,
         availableTickets: 200,
         percentageAvailable: 100,
-        isSoldOut: false
+        isSubmitting: false,
+        isSoldOut: false,
+        result: false,
+        resultMsg: "",
     })
 
     const [showRegister, setShowRegister] = useState(false)
     const handleCloseRegister = () => setShowRegister(false)
     const handleShowRegister = () => setShowRegister(true)
+    const [showResult, setShowResult] = useState(false)
+    const handleCloseResult = () => setShowResult(false)
+    const handleShowResult = () => setShowResult(true)
 
     // state updater
     const _setState = (name, value) => {
-        setState(prevState => ({...prevState, [name]: value}))
+        setState(prevState => ({ ...prevState, [name]: value }))
     }
 
     const computeAvailableTicketsPercent = async () => {
@@ -30,13 +36,49 @@ export default function ApplyTicket() {
         const availableTickets = state.maxTickets - count
 
         _setState("availableTickets", availableTickets)
-        _setState("percentageAvailable", (availableTickets/state.maxTickets) * 100)
+        _setState("percentageAvailable", (availableTickets / state.maxTickets) * 100)
 
         if (count === state.maxTickets) _setState("isSoldOut", true)
     }
 
-    const submitForm = async (e) => {
+    const submitForm = e => {
         e.preventDefault()
+
+        _setState("isSubmitting", true)
+
+        const data = new FormData()
+        data.append("firstname", document.getElementById('fname').value)
+        data.append("lastname", document.getElementById('lname').value)
+        data.append("contact_number", document.getElementById('contact_no').value)
+        data.append("email", document.getElementById('email').value)
+        data.append("address", document.getElementById('address').value)
+        data.append("shirt", document.getElementById('shirt').value)
+        data.append("organization", document.getElementById('organization').value)
+        data.append("payment", document.getElementById('payment').files[0])
+
+        axios.post("https://ownly.market/api/amac-register", data)
+            .then(res => {
+                if (res.status === 200) {
+                    _setState("result", true)
+                    _setState("resultMsg", "You have successfully registered! Please wait for our email confirmation together with the ticket number to be presented on the event registration.")
+                    _setState("isSubmitting", false)
+                    handleShowResult()
+
+                    // clear form
+                    document.getElementById("ticket-form").reset();
+                } else {
+                    _setState("result", false)
+                    _setState("resultMsg", "Something went wrong. Please try again in a while.")
+                    _setState("isSubmitting", false)
+                    handleShowResult()
+                }
+            })
+            .catch(error => {
+                _setState("result", false)
+                _setState("resultMsg", error.message)
+                _setState("isSubmitting", false)
+                handleShowResult()
+            })
     }
 
     useEffect(() => {
@@ -60,7 +102,7 @@ export default function ApplyTicket() {
                     {/* Range */}
                     <div className="ticket-range-wrap">
                         <div className="ticket-range-outer">
-                            <div className="ticket-range-inner" style={{"width": `${state.percentageAvailable}%`}}></div>
+                            <div className="ticket-range-inner" style={{ "width": `${state.percentageAvailable}%` }}></div>
                         </div>
                     </div>
                     <p className="text-center font-size-lg-120 text-white ticket-available-qty">{state.availableTickets}/{state.maxTickets}</p>
@@ -80,28 +122,28 @@ export default function ApplyTicket() {
                     <div className="ticket-inclusion-item p-3 mb-4">
                         <div className="text-center mb-4">
                             <FontAwesomeIcon className="inclusion-icon" icon={faGifts} color="white" size="4x" />
-                        </div>  
+                        </div>
                         <p className="text-center font-size-lg-140 text-white inclusion-desc mb-2">AMAC2022 freebies</p>
                         <p className="text-center font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Event shirt designed by Lei Melendres and more!</p>
                     </div>
                     <div className="ticket-inclusion-item p-3 mb-4">
                         <div className="text-center mb-4">
                             <FontAwesomeIcon className="inclusion-icon" icon={faUsers} color="white" size="4x" />
-                        </div>  
+                        </div>
                         <p className="text-center font-size-lg-140 text-white inclusion-desc mb-2">Networking</p>
                         <p className="text-center font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Connect and meet fellow creative minds in the event</p>
                     </div>
                     <div className="ticket-inclusion-item p-3 mb-4">
                         <div className="text-center mb-4">
                             <FontAwesomeIcon className="inclusion-icon" icon={faCertificate} color="white" size="4x" />
-                        </div>  
+                        </div>
                         <p className="text-center font-size-lg-140 text-white inclusion-desc mb-2">NFT Certificate</p>
                         <p className="text-center font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Irrefutable POAP</p>
                     </div>
                     <div className="ticket-inclusion-item p-3 mb-4">
                         <div className="text-center mb-4">
                             <FontAwesomeIcon className="inclusion-icon" icon={faHeart} color="white" size="4x" />
-                        </div>  
+                        </div>
                         <p className="text-center font-size-lg-140 text-white inclusion-desc mb-2">Free Mint Rascals</p>
                         <p className="text-center font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Get to mint Ownly's Mustachio Rascals for FREE!</p>
                     </div>
@@ -122,10 +164,10 @@ export default function ApplyTicket() {
                             <div className="col-12 col-md-6">
                                 <p className="text-center font-size-lg-200 text-color-3 arvo-bold ticket-title mb-4">REGISTRATION</p>
                                 <div className="register-wrap">
-                                    <form onSubmit={submitForm} encType="multipart/form-data">
+                                    <form onSubmit={submitForm} encType="multipart/form-data" id="ticket-form">
                                         <input id="fname" type="text" name="fname" className="form-control px-3 py-2 font-size-90 mb-3" placeholder="First Name" required />
                                         <input id="lname" type="text" name="lname" className="form-control px-3 py-2 font-size-90 mb-3" placeholder="Last Name" required />
-                                        <input id="contact_no" type="text" name="contact_no" className="form-control px-3 py-2 font-size-90 mb-3" placeholder="Mobile Number" required />
+                                        <input id="contact_no" type="text" name="contact_no" className="form-control px-3 py-2 font-size-90 mb-3" placeholder="Mobile Number" maxLength="11" required />
                                         <input id="email" type="email" name="email" className="form-control px-3 py-2 font-size-90 mb-3" placeholder="Email Address" required />
                                         <textarea id="address" className="form-control px-3 py-2 font-size-90 mb-3 resize-none" placeholder="Address" required cols={3}></textarea>
                                         <textarea id="organization" className="form-control px-3 py-2 font-size-90 mb-3 resize-none" placeholder="Company/School/Organization" required cols={3}></textarea>
@@ -137,22 +179,28 @@ export default function ApplyTicket() {
                                             <option value="L">L</option>
                                             <option value="XL">XL</option>
                                         </select>
-                                        <label for="payment" className="form-label font-size-90">Upload screenshot of Proof of Payment</label>
+                                        <label htmlFor="payment" className="form-label font-size-90">Upload screenshot of Proof of Payment</label>
                                         <input className="form-control font-size-90 mb-3" type="file" id="payment" required />
                                         <div className="form-check d-flex align-items-start mb-4">
                                             <div>
                                                 <input className="form-check-input" type="checkbox" id="agreement" required />
                                             </div>
                                             <div className="ps-1">
-                                                <label className="form-check-label font-size-80 text-color-6" for="agreement">
-                                                By checking this box, you are agreeing to our <a href="#" className="link-color-3 arvo-bold">terms and conditions</a> and you understand that the tickets are non-refundable (you can check our FAQ section <a href="/#faq" className="link-color-3 arvo-bold">here</a>).
+                                                <label className="form-check-label font-size-80 text-color-6" htmlFor="agreement">
+                                                    By checking this box, you are agreeing to our terms and conditions and you understand that the tickets are non-refundable (you can check our FAQ section for more details).
                                                 </label>
                                             </div>
                                         </div>
 
                                         <div className="d-flex justify-content-center">
-                                            <button onClick={handleCloseRegister} className="btn px-5 ticket-cancel-btn mx-3">CANCEL</button>
-                                            <input type="submit" className="def btn btn-custom-4 px-5 ticket-proceed-btn mx-3" value="REGISTER" />
+                                            <button onClick={handleCloseRegister} className="btn px-5 ticket-cancel-btn mx-3" disabled={state.isSubmitting}>CANCEL</button>
+                                            { state.isSubmitting ? (
+                                                <button type="button" className="def btn btn-custom-4 px-5 ticket-proceed-btn mx-3" disabled={true}>
+                                                    <FontAwesomeIcon icon={faSpinner} className="text-white" spin />
+                                                </button>
+                                            ) : (
+                                                <input type="submit" className="def btn btn-custom-4 px-5 ticket-proceed-btn mx-3" value="REGISTER" />
+                                            )}
                                         </div>
                                     </form>
                                 </div>
@@ -178,7 +226,24 @@ export default function ApplyTicket() {
                         </div>
                     </div>
                 </Modal.Body>
-            </Modal> 
+            </Modal>
+
+            {/* Result */}
+            <Modal show={showResult} onHide={handleCloseResult} backdrop="static" keyboard={false} size="md" centered>
+                <Modal.Body className="p-3">
+                    <div className="text-center mb-3">
+                        { state.result ? (
+                            <FontAwesomeIcon color="green" size="3x" icon={faCheckCircle} />
+                        ) : (
+                            <FontAwesomeIcon color="red" size="3x" icon={faExclamationCircle} />
+                        )}
+                    </div>
+                    <p className="text-center font-size-lg-120 text-color-6 ticket-result mb-0">{state.resultMsg}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                    <button onClick={handleCloseResult} className="btn px-5 ticket-cancel-btn">CLOSE</button>
+                </Modal.Footer>
+            </Modal>
         </section>
     )
 }

@@ -9,17 +9,17 @@ export default function Footer() {
                 <div className="footer-icons d-flex justify-content-center align-items-center mb-4">
                     <div className="footer-icon-item mx-2">
                         <a className="btn footer-icon-link" href="https://web.facebook.com/amacphilippines" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon className="text-white" icon={faFacebookF} size="md" />
+                            <FontAwesomeIcon className="text-white" icon={faFacebookF} />
                         </a>
                     </div>
                     <div className="footer-icon-item mx-2">
                         <a className="btn footer-icon-link" href="https://twitter.com/amac_ph" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon className="text-white" icon={faTwitter} size="md" />
+                            <FontAwesomeIcon className="text-white" icon={faTwitter} />
                         </a>
                     </div>
                     <div className="footer-icon-item mx-2">
                         <a className="btn footer-icon-link" href="https://www.instagram.com/amacphilippines" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon className="text-white" icon={faInstagram} size="md" />
+                            <FontAwesomeIcon className="text-white" icon={faInstagram} />
                         </a>
                     </div>
                 </div>

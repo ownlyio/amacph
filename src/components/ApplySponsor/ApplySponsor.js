@@ -9,7 +9,7 @@ export default function ApplySponsor() {
                 <div className="row align-items-center">
                     <div className="col-12 col-md-6 order-2 order-md-1">
                         <div className="sponsor-gform">
-                            <iframe title="Apply as Sponsor form" src="https://docs.google.com/forms/d/e/1FAIpQLSfPgYfe66J7d4JSqj3RmyraX5mLahxVUcWLJ7ImDyftvccNOQ/viewform?embedded=true" width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            <iframe title="Apply as Sponsor form" src="https://docs.google.com/forms/d/e/1FAIpQLSfPgYfe66J7d4JSqj3RmyraX5mLahxVUcWLJ7ImDyftvccNOQ/viewform?embedded=true" width="640" height="720" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 order-1 order-md-2">

@@ -24,16 +24,16 @@ export default function Speakers() {
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faFacebookF} size="md" />
+                                    <FontAwesomeIcon icon={faFacebookF} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faTwitter} size="md" />
+                                    <FontAwesomeIcon icon={faTwitter} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faInstagram} size="md" />
+                                    <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="md" />
+                                    <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
                             </div>
                         </div>
@@ -48,16 +48,16 @@ export default function Speakers() {
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faFacebookF} size="md" />
+                                    <FontAwesomeIcon icon={faFacebookF} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faTwitter} size="md" />
+                                    <FontAwesomeIcon icon={faTwitter} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faInstagram} size="md" />
+                                    <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="md" />
+                                    <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
                             </div>
                         </div>
@@ -72,16 +72,16 @@ export default function Speakers() {
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faFacebookF} size="md" />
+                                    <FontAwesomeIcon icon={faFacebookF} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faTwitter} size="md" />
+                                    <FontAwesomeIcon icon={faTwitter} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faInstagram} size="md" />
+                                    <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="md" />
+                                    <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
                             </div>
                         </div>
@@ -96,16 +96,16 @@ export default function Speakers() {
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faFacebookF} size="md" />
+                                    <FontAwesomeIcon icon={faFacebookF} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faTwitter} size="md" />
+                                    <FontAwesomeIcon icon={faTwitter} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faInstagram} size="md" />
+                                    <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="md" />
+                                    <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
                             </div>
                         </div>
