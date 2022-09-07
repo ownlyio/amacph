@@ -4,4 +4,69 @@
         border: none !important;
         padding: 0 !important;
     }
+
+    button.def, a.def {
+        font-size: 1.2em !important;
+    }
+
+    .about-numbers {
+        margin-top: 4em !important;
+    }
+
+    .speaker-img {
+        width: 80% !important;
+    }
+
+    .ticket-img {
+        width: 200px !important;
+    }
+
+    .sponsor-item {
+        width: 250px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .amac-logo {
+        width: 60% !important;
+    }
+
+    .about-desc,
+    .merchant-sub,
+    .sponsor-sub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-img,
+    .merchant-img,
+    .apply-sponsor-img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-numbers {
+        margin-top: 2em !important;
+    }
+
+    .ticket-inclusion-item {
+        width: 40% !important;
+    }
+
+    .sponsors-row {
+        flex-direction: column;
+    }
+
+    .sponsor-sub {
+        width: 85% !important;
+    }
+
+    .accordion {
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 576px) {
+
 }

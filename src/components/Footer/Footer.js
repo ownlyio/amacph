@@ -24,7 +24,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <p className="text-center font-size-lg-110 text-white mb-0">Copyright &copy; 2022 Albay Multimedia Arts Convention</p>
+                <p className="text-center font-size-100 font-size-lg-110 text-white mb-0">Copyright &copy; 2022 Albay Multimedia Arts Convention</p>
             </div>
         </footer>
     )
