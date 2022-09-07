@@ -8,12 +8,12 @@ export default function ApplySponsor() {
         <section id="amac-apply-sponsor" className="background-image-cover" style={{"backgroundImage": `url(${sponsor})`}}>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-12 col-md-6 mb-sm-5">
+                    <div className="col-12 col-md-5 mb-sm-5 mb-md-0">
                         <div className="apply-sponsor-img">
                             <img src={sponsor1} alt="AMAC Crowd" className="w-100" />
                         </div>
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 offset-md-1">
                         <p className="text-center text-md-start font-size-sm-150 font-size-md-200 font-size-lg-280 text-color-2 arvo-bold sponsor-title mb-4">BECOME A SPONSOR</p>
                         <p className="text-center text-md-start font-size-sm-100 font-size-md-120 font-size-lg-140 text-white sponsor-sub mb-sm-4 mb-md-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 

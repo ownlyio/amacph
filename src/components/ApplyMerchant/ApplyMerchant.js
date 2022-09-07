@@ -16,7 +16,7 @@ export default function ApplyMerchant() {
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfucKmPeebypjOA3dC8anxgCyrM37nRYv1RxbPvuQSppRNVNg/viewform?usp=sf_link" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5 merchant-btn">APPLY NOW!</a>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 order-1 order-md-2 mb-sm-5">
+                    <div className="col-12 col-md-6 order-1 order-md-2 mb-sm-5 mb-md-0">
                         <div className="merchant-img">
                             <img src={merchant1} alt="Merchant of AMAC" className="w-100" />
                         </div>
