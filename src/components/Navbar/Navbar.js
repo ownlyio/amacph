@@ -113,11 +113,11 @@ export default function Navbar(props) {
                                 <img src={logo} className="w-100" alt="AMAC Logo" />
                             </Link>
                         </div>
-                        <HashLink smooth to="#speakers" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-120 d-block py-3 w-100 text-decoration-none">SPEAKERS</HashLink>
-                        <HashLink smooth to="#tickets" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-120 d-block py-3 w-100 text-decoration-none">TICKETS</HashLink>
-                        <HashLink smooth to="#merchant" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-120 d-block py-3 w-100 text-decoration-none">MERCHANT</HashLink>
-                        <HashLink smooth to="#sponsors" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-120 d-block py-3 w-100 text-decoration-none">SPONSORS</HashLink>
-                        <HashLink smooth to="#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-120 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
+                        <HashLink smooth to="#speakers" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">SPEAKERS</HashLink>
+                        <HashLink smooth to="#tickets" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">TICKETS</HashLink>
+                        <HashLink smooth to="#merchant" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">MERCHANT</HashLink>
+                        <HashLink smooth to="#sponsors" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">SPONSORS</HashLink>
+                        <HashLink smooth to="#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
                         <button type="button" className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-220 w-100">
                             BUY TICKETS
                         </button>
