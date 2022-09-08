@@ -89,6 +89,17 @@
     }
 }
 
+@media (max-width: 440px) {
+    .ticket-reg-btns {
+        flex-direction: column !important;
+    }
+
+    .ticket-reg-btns button {
+        width: 100% !important;
+        margin: 0.3em 0 !important;
+    }
+}
+
 @media (max-width: 400px) {
     .amac-logo {
         width: 70% !important;
@@ -105,4 +116,6 @@
     .sponsor-item {
         width: 170px !important;
     }
+
+    
 }

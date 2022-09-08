@@ -15,13 +15,13 @@ export default function ApplyTicket() {
         isSubmitting: false,
         isSoldOut: false,
         result: false,
-        resultMsg: "",
+        resultMsg: "You have successfully registered!",
     })
 
     const [showRegister, setShowRegister] = useState(false)
     const handleCloseRegister = () => setShowRegister(false)
     const handleShowRegister = () => setShowRegister(true)
-    const [showResult, setShowResult] = useState(false)
+    const [showResult, setShowResult] = useState(true)
     const handleCloseResult = () => setShowResult(false)
     const handleShowResult = () => setShowResult(true)
 
@@ -161,8 +161,8 @@ export default function ApplyTicket() {
                 <Modal.Body className="p-0">
                     <div className="modal-wrapper">
                         <div className="row align-items-start p-4">
-                            <div className="col-12 col-md-6">
-                                <p className="text-center font-size-lg-200 text-color-3 arvo-bold ticket-title mb-4">REGISTRATION</p>
+                            <div className="col-12 col-lg-6 mt-5 mt-lg-0 order-2 order-lg-1">
+                                <p className="text-center font-size-130 font-size-md-160 font-size-lg-200 text-color-3 arvo-bold ticket-title mb-4">REGISTRATION</p>
                                 <div className="register-wrap">
                                     <form onSubmit={submitForm} encType="multipart/form-data" id="ticket-form">
                                         <input id="fname" type="text" name="fname" className="form-control px-3 py-2 font-size-90 mb-3" placeholder="First Name" required />
@@ -192,36 +192,36 @@ export default function ApplyTicket() {
                                             </div>
                                         </div>
 
-                                        <div className="d-flex justify-content-center">
-                                            <button onClick={handleCloseRegister} className="btn px-5 ticket-cancel-btn mx-3" disabled={state.isSubmitting}>CANCEL</button>
+                                        <div className="d-flex justify-content-center ticket-reg-btns">
+                                            <button onClick={handleCloseRegister} className="btn px-5 ticket-cancel-btn mx-3 order-2 order-lg-1" disabled={state.isSubmitting}>CANCEL</button>
                                             { state.isSubmitting ? (
-                                                <button type="button" className="def btn btn-custom-4 px-5 ticket-proceed-btn mx-3" disabled={true}>
+                                                <button type="button" className="def btn btn-custom-4 px-5 ticket-proceed-btn mx-3 order-1 order-lg-2" disabled={true}>
                                                     <FontAwesomeIcon icon={faSpinner} className="text-white" spin />
                                                 </button>
                                             ) : (
-                                                <input type="submit" className="def btn btn-custom-4 px-5 ticket-proceed-btn mx-3" value="REGISTER" />
+                                                <button type="submit" className="def btn btn-custom-4 px-5 ticket-proceed-btn mx-3 order-1 order-lg-2">REGISTER</button>
                                             )}
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6">
-                                <p className="text-center font-size-lg-200 text-color-3 arvo-bold ticket-title mb-4">PAYMENT</p>
+                            <div className="col-12 col-lg-6 order-1 order-lg-2">
+                                <p className="text-center font-size-130 font-size-md-160 font-size-lg-200 text-color-3 arvo-bold ticket-title mb-4">PAYMENT</p>
                                 <div className="register-instructions mb-4">
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-3"><b>Ticket Price:</b> ₱ 500 inclusive of AMAC Shirt  </p>
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-3 arvo-bold">Payment Options:</p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-3"><b>Ticket Price:</b> ₱ 500 inclusive of AMAC Shirt  </p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-3 arvo-bold">Payment Options:</p>
 
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-1 arvo-italic">GCash</p>
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Ismael Jerusalem</p>
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-3">09561525513</p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-1 arvo-italic">GCash</p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Ismael Jerusalem</p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-3">09561525513</p>
 
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-1 arvo-italic">Bank Transfer</p>
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Bank: UnionBank</p>
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Account Name: Ismael Jerusalem</p>
-                                    <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Account No.: 1094-2579-7520</p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-1 arvo-italic">Bank Transfer</p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Bank: UnionBank</p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Account Name: Ismael Jerusalem</p>
+                                    <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Account No.: 1094-2579-7520</p>
                                 </div>
-                                <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-3">Kindly attach the Proof of Payment file on the registration form.</p>
-                                <p className="font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Once verified, email confirmation will be sent together with the ticket number to be presented on the event registration.</p>
+                                <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-3">Kindly attach the Proof of Payment file on the registration form.</p>
+                                <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-1">Once verified, email confirmation will be sent together with the ticket number to be presented on the event registration.</p>
                             </div>
                         </div>
                     </div>
@@ -238,7 +238,7 @@ export default function ApplyTicket() {
                             <FontAwesomeIcon color="red" size="3x" icon={faExclamationCircle} />
                         )}
                     </div>
-                    <p className="text-center font-size-lg-120 text-color-6 ticket-result mb-0">{state.resultMsg}</p>
+                    <p className="text-center font-size-100 font-size-lg-120 text-color-6 ticket-result mb-0">{state.resultMsg}</p>
                 </Modal.Body>
                 <Modal.Footer>
                     <button onClick={handleCloseResult} className="btn px-5 ticket-cancel-btn">CLOSE</button>
