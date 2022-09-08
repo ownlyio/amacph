@@ -4,12 +4,12 @@ export default function FAQ() {
     return (
         <section id="faq">
             <div className="container">
-                <p className="text-center font-size-sm-160 font-size-md-200 font-size-lg-280 text-white arvo-bold faq-title mb-4">FREQUENTLY ASKED QUESTIONS</p>
+                <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-white arvo-bold faq-title mb-4">FREQUENTLY ASKED QUESTIONS</p>
 
                 <div className="accordion accordion-flush" id="faq-accordion">
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="flush-header-1">
-                            <button className="font-size-160 accordion-button text-center justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1">
+                            <button className="font-size-130 font-size-sm-160 accordion-button text-center justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1">
                                 Question #1
                             </button>
                         </h2>
@@ -21,7 +21,7 @@ export default function FAQ() {
                     </div>
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="flush-header-2">
-                            <button className="font-size-160 accordion-button text-center justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2">
+                            <button className="font-size-130 font-size-sm-160 accordion-button text-center justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2">
                                 Question #2
                             </button>
                         </h2>
@@ -33,7 +33,7 @@ export default function FAQ() {
                     </div>
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="flush-header-1">
-                            <button className="font-size-160 accordion-button text-center justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3">
+                            <button className="font-size-130 font-size-sm-160 accordion-button text-center justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3">
                                 Question #3
                             </button>
                         </h2>

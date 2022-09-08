@@ -68,5 +68,41 @@
 }
 
 @media (max-width: 576px) {
+    button.def, a.def {
+        font-size: 1em !important;
+    }
 
+    .about-numbers {
+        margin-top: 1em !important;
+    }
+
+    .speaker-img {
+        width: 60% !important;
+    }
+
+    .ticket-img {
+        width: 160px !important;
+    }
+
+    .sponsor-item {
+        width: 200px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .amac-logo {
+        width: 70% !important;
+    }
+
+    .ticket-inclusion-item {
+        width: 50% !important;
+    }
+
+    .speaker-img {
+        width: 70% !important;
+    }
+
+    .sponsor-item {
+        width: 170px !important;
+    }
 }
