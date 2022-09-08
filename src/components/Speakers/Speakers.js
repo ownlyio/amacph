@@ -3,10 +3,10 @@ import { faFacebookF, faLinkedinIn, faTwitter, faInstagram } from '@fortawesome/
 import './Speakers.css'
 
 import speakerBg from '../../img/speaker_bg.png'
-import speaker1 from '../../img/speakers/speaker1.jpg'
-import speaker2 from '../../img/speakers/speaker2.jpg'
-import speaker3 from '../../img/speakers/speaker3.jpg'
-import speaker4 from '../../img/speakers/speaker4.jpg'
+import lei from '../../img/speakers/lei_melendres.png'
+import jopet from '../../img/speakers/jopet_arias.jpg'
+import karl from '../../img/speakers/karl_vasquez.jpg'
+import john from '../../img/speakers/john_verlin_santos.jpg'
 
 export default function Speakers() {
     return (
@@ -17,10 +17,10 @@ export default function Speakers() {
                     <div className="col-12 col-sm-6 col-lg-3">
                         <div className="speaker-item mb-4 p-3">
                             <div className="speaker-img p-3 mb-sm-2 mb-lg-3">
-                                <img src={speaker1} alt="Speaker 1 Name" className="w-100" />
+                                <img src={lei} alt="Lei Melendres" className="w-100" />
                             </div>
-                            <p className="text-center font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 text-color-6 arvo-bold speaker-name mb-1">Gab Wells</p>
-                            <p className="text-center font-size-90 font-size-md-110 font-size-lg-130 text-color-5 arvo-italic speaker-job">Founder, Edilta</p>
+                            <p className="text-center font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 text-color-6 arvo-bold speaker-name mb-1">Lei Melendres</p>
+                            <p className="text-center font-size-90 font-size-md-110 font-size-lg-130 text-color-5 arvo-italic speaker-job">Illustrator/Doodle Artist</p>
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
@@ -41,10 +41,10 @@ export default function Speakers() {
                     <div className="col-12 col-sm-6 col-lg-3">
                         <div className="speaker-item mb-4 p-3">
                             <div className="speaker-img p-3 mb-sm-2 mb-lg-3">
-                                <img src={speaker2} alt="Speaker 2 Name" className="w-100" />
+                                <img src={jopet} alt="Jopet Arias" className="w-100" />
                             </div>
-                            <p className="text-center font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 text-color-6 arvo-bold speaker-name mb-1">Melisa Lundryn</p>
-                            <p className="text-center font-size-90 font-size-md-110 font-size-lg-130 text-color-5 arvo-italic speaker-job">Lead Designer, Payol</p>
+                            <p className="text-center font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 text-color-6 arvo-bold speaker-name mb-1">Jopet Arias</p>
+                            <p className="text-center font-size-90 font-size-md-110 font-size-lg-130 text-color-5 arvo-italic speaker-job">Forerunner, Artist and Digital Nomad</p>
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
@@ -65,10 +65,10 @@ export default function Speakers() {
                     <div className="col-12 col-sm-6 col-lg-3">
                         <div className="speaker-item mb-4 p-3">
                             <div className="speaker-img p-3 mb-sm-2 mb-lg-3">
-                                <img src={speaker3} alt="Speaker 3 Name" className="w-100" />
+                                <img src={karl} alt="Karl Vasquez" className="w-100" />
                             </div>
-                            <p className="text-center font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 text-color-6 arvo-bold speaker-name mb-1">Agaton Johnsson</p>
-                            <p className="text-center font-size-90 font-size-md-110 font-size-lg-130 text-color-5 arvo-italic speaker-job">Development Expert</p>
+                            <p className="text-center font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 text-color-6 arvo-bold speaker-name mb-1">Karl Vasquez</p>
+                            <p className="text-center font-size-90 font-size-md-110 font-size-lg-130 text-color-5 arvo-italic speaker-job">Creative Director</p>
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
@@ -89,10 +89,10 @@ export default function Speakers() {
                     <div className="col-12 col-sm-6 col-lg-3">
                         <div className="speaker-item mb-4 p-3">
                             <div className="speaker-img p-3 mb-sm-2 mb-lg-3">
-                                <img src={speaker4} alt="Speaker 3 Name" className="w-100" />
+                                <img src={john} alt="Speaker 3 Name" className="w-100" />
                             </div>
-                            <p className="text-center font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 text-color-6 arvo-bold speaker-name mb-1">Maria Henrikon</p>
-                            <p className="text-center font-size-90 font-size-md-110 font-size-lg-130 text-color-5 arvo-italic speaker-job">Founder, Cards.IO</p>
+                            <p className="text-center font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 text-color-6 arvo-bold speaker-name mb-1">John Verlin Santos</p>
+                            <p className="text-center font-size-90 font-size-md-110 font-size-lg-130 text-color-5 arvo-italic speaker-job">Spoken Word Artist</p>
 
                             <div className="speaker-socmed d-flex align-items-center justify-content-center">
                                 <a href="https://sample.com" target="_blank" rel="noreferrer" className="mx-2 link-color-2 speaker-socmed-icon">
