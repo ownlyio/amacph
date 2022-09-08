@@ -6,7 +6,7 @@ import './Navbar.css'
 
 import logo from '../../img/amac-logo-1.png'
 
-export default function Navbar(props) {
+export default function Navbar({ showRegister }) {
     const [menuOpenState, setMenuOpenState] = useState(false)
 
     const scrollWithOffset = (el) => {
@@ -97,7 +97,7 @@ export default function Navbar(props) {
                             <HashLink className="text-color-6 font-size-120" smooth to="#faq" scroll={el => scrollWithOffset(el)}>FAQ</HashLink>
                         </li>
                         <li>
-                            <button className="btn amac-nav-btn btn-custom-2 px-4">
+                            <button onClick={showRegister} type="button" className="btn amac-nav-btn btn-custom-2 px-4">
                                 BUY TICKETS
                             </button>
                         </li>
@@ -118,7 +118,7 @@ export default function Navbar(props) {
                         <HashLink smooth to="#merchant" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">MERCHANT</HashLink>
                         <HashLink smooth to="#sponsors" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">SPONSORS</HashLink>
                         <HashLink smooth to="#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
-                        <button type="button" className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-220 w-100">
+                        <button onClick={showRegister} type="button" className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-220 w-100">
                             BUY TICKETS
                         </button>
                     </Menu>

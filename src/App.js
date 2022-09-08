@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 import './App.css'
 
 // components
@@ -16,27 +18,115 @@ import Footer from './components/Footer/Footer'
 // pages
 import EventDetails from './pages/EventDetails/EventDetails'
 
+// modals
+import RegisterModal from './components/_Modals/RegisterModal'
+import PromptModal from './components/_Modals/PromptModal'
+
 function App() {
+    const [state, setState] = useState({
+        maxTickets: 200,
+        availableTickets: 200,
+        percentageAvailable: 100,
+        isSubmitting: false,
+        isSoldOut: false,
+        result: false,
+        resultMsg: "You have successfully registered!",
+    })
+
+    const [showRegister, setShowRegister] = useState(false)
+    const handleCloseRegister = () => setShowRegister(false)
+    const handleShowRegister = () => setShowRegister(true)
+    const [showResult, setShowResult] = useState(false)
+    const handleCloseResult = () => setShowResult(false)
+    const handleShowResult = () => setShowResult(true)
+
+    // state updater
+    const _setState = (name, value) => {
+        setState(prevState => ({ ...prevState, [name]: value }))
+    }
+
+    const computeAvailableTicketsPercent = async () => {
+        const verifiedRegistrants = await axios.get('https://ownly.market/api/amac-verified-registrants-count')
+        const count = verifiedRegistrants.data.count
+        const availableTickets = state.maxTickets - count
+
+        _setState("availableTickets", availableTickets)
+        _setState("percentageAvailable", (availableTickets / state.maxTickets) * 100)
+
+        if (count === state.maxTickets) _setState("isSoldOut", true)
+    }
+
+    const submitForm = e => {
+        e.preventDefault()
+
+        _setState("isSubmitting", true)
+
+        const data = new FormData()
+        data.append("firstname", document.getElementById('fname').value)
+        data.append("lastname", document.getElementById('lname').value)
+        data.append("contact_number", document.getElementById('contact_no').value)
+        data.append("email", document.getElementById('email').value)
+        data.append("address", document.getElementById('address').value)
+        data.append("shirt", document.getElementById('shirt').value)
+        data.append("organization", document.getElementById('organization').value)
+        data.append("payment", document.getElementById('payment').files[0])
+
+        axios.post("https://ownly.market/api/amac-register", data)
+            .then(res => {
+                if (res.status === 200) {
+                    _setState("result", true)
+                    _setState("resultMsg", "You have successfully registered! Please wait for our email confirmation together with the ticket number to be presented on the event registration.")
+                    _setState("isSubmitting", false)
+                    handleShowResult()
+
+                    // clear form
+                    document.getElementById("ticket-form").reset();
+                } else {
+                    _setState("result", false)
+                    _setState("resultMsg", "Something went wrong. Please try again in a while.")
+                    _setState("isSubmitting", false)
+                    handleShowResult()
+                }
+            })
+            .catch(error => {
+                _setState("result", false)
+                _setState("resultMsg", error.message)
+                _setState("isSubmitting", false)
+                handleShowResult()
+            })
+    }
+
+    useEffect(() => {
+        computeAvailableTicketsPercent()
+    }, [])
+
     return (
-        <Router basename={process.env.PUBLIC_URL}>
-            <Navbar />
-            <Switch>
-                <Route exact path="/">
-                    <Banner />
-                    <About />
-                    <Speakers />
-                    <ApplyTicket />
-                    <ApplyMerchant />
-                    <Sponsors />
-                    <ApplySponsor />
-                    <FAQ />
-                </Route>
-                <Route exact path="/event-details">
-                    <EventDetails />
-                </Route>
-            </Switch>
-            <Footer />
-        </Router>
+        <>
+            <Router basename={process.env.PUBLIC_URL}>
+                <Navbar showRegister={handleShowRegister} />
+                <Switch>
+                    <Route exact path="/">
+                        <Banner showRegister={handleShowRegister} />
+                        <About />
+                        <Speakers />
+                        <ApplyTicket state={state} showRegister={handleShowRegister} />
+                        <ApplyMerchant />
+                        <Sponsors />
+                        <ApplySponsor />
+                        <FAQ />
+                    </Route>
+                    <Route exact path="/event-details">
+                        <EventDetails />
+                    </Route>
+                </Switch>
+                <Footer />
+            </Router>
+
+            {/* Register */}
+            <RegisterModal registerModal={showRegister} closeRegister={handleCloseRegister} isSubmitting={state.isSubmitting} submitForm={submitForm} />
+            {/* Result */}
+            <PromptModal resultModal={showResult} closeResult={handleCloseResult} result={state.result} resultMsg={state.resultMsg} />
+        </>
     );
 }
 
