@@ -35,7 +35,7 @@ export default function ApplySponsor() {
 
 
                         <div className="text-center text-md-start">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfucKmPeebypjOA3dC8anxgCyrM37nRYv1RxbPvuQSppRNVNg/viewform?usp=sf_link" target="_blank" rel="noreferrer" className="def btn btn-custom-3 px-5 merchant-btn">APPLY NOW!</a>
+                            <a href="https://forms.gle/jSay9jP7oMMjrWLe9" target="_blank" rel="noreferrer" className="def btn btn-custom-3 px-5 merchant-btn">APPLY NOW!</a>
                         </div>
                     </div>
                 </div>

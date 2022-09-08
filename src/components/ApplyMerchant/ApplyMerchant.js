@@ -13,7 +13,7 @@ export default function ApplyMerchant() {
                         <p className="text-center text-md-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-white merchant-sub mb-4 mb-md-5">Art can be a very personal and intimate experience, so why not bring it to your customers with the biggest event celebrating creativity through art and tech in South Luzon? If you’re interested in selling your art prints and/or crafts and accessories at AMAC, we encourage you to reach out by clicking the button below.</p>
 
                         <div className="text-center text-md-start">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfucKmPeebypjOA3dC8anxgCyrM37nRYv1RxbPvuQSppRNVNg/viewform?usp=sf_link" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5 merchant-btn">APPLY NOW!</a>
+                            <a href="https://forms.gle/RuBfnskRRLHSy3Zw7" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5 merchant-btn">APPLY NOW!</a>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0">
