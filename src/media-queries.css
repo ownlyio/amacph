@@ -41,10 +41,6 @@
         margin-top: 4em !important;
     }
 
-    .ticket-img {
-        width: 200px !important;
-    }
-
     .sponsor-item {
         width: 250px !important;
     }
@@ -105,6 +101,12 @@
     .speaker-desc {
         height: 80px !important;
     }
+
+    .ticket-img-wrap {
+        width: 60% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 576px) {
@@ -118,10 +120,6 @@
 
     .about-numbers {
         margin-top: 1em !important;
-    }
-
-    .ticket-img {
-        width: 160px !important;
     }
 
     .sponsor-item {

@@ -4,18 +4,12 @@
     background: linear-gradient(39deg, rgba(255,182,0,1) 0%, rgba(255,113,88,1) 100%);
 }
 
-.ticket-wrap {
-    margin-bottom: 5em;
-}
-
 .ticket-title {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .ticket-img {
-    width: 250px;
-    transform: rotateZ(-10deg);
-    margin-bottom: 3em;
+    margin-bottom: 1.1em;
 }
 
 .ticket-range-wrap {
@@ -39,5 +33,5 @@
 }
 
 .ticket-inclusion-item {
-    width: 30%;
+    width: 50%;
 }

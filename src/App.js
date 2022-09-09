@@ -62,6 +62,20 @@ function App() {
         if (count === state.maxTickets) _setState("isSoldOut", true)
     }
 
+    const availableTickets = async () => {
+        const verifiedRegistrants = await axios.get('https://ownly.market/api/amac-verified-registrants-count')
+        const count = verifiedRegistrants.data.count
+
+        if (count === state.maxTickets) {
+            _setState("result", false)
+            _setState("resultMsg", "Sorry. The tickets for the art talks are now SOLD OUT, but you may still join us at the event venue for other activities.")
+            _setState("isSubmitting", false)
+            handleShowResult()
+        } else {
+            handleShowRegister()
+        }
+    }   
+
     const submitForm = e => {
         e.preventDefault()
 
@@ -76,7 +90,7 @@ function App() {
         data.append("shirt", document.getElementById('shirt').value)
         data.append("organization", document.getElementById('organization').value)
         data.append("payment", document.getElementById('payment').files[0])
-
+        
         axios.post("https://ownly.market/api/amac-register", data)
             .then(res => {
                 if (res.status === 200) {
@@ -109,15 +123,15 @@ function App() {
     return (
         <>
             <Router basename={process.env.PUBLIC_URL}>
-                <Navbar showRegister={handleShowRegister} />
+                <Navbar showRegister={availableTickets} />
                 <Switch>
                     <Route exact path="/">
-                        <Banner showRegister={handleShowRegister} />
+                        <Banner showRegister={availableTickets} />
                         <About />
                         <PastAMAC showAmacModal={handleShowAmacVideo} />
                         <Events />
                         <Speakers />
-                        <ApplyTicket state={state} showRegister={handleShowRegister} />
+                        <ApplyTicket state={state} showRegister={availableTickets} />
                         <ApplyMerchant />
                         <Sponsors />
                         <ApplySponsor />
