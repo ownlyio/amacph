@@ -1,0 +1,15 @@
+/* Tickets */
+.form-check-input:checked {
+    background-color: #c83e38 !important;
+    border-color: #c83e38 !important;
+}
+
+.ticket-cancel-btn {
+    border: 1px solid #888888;
+}
+
+.ticket-cancel-btn:hover,
+.ticket-cancel-btn:focus {
+    border-color: #c83e38;
+    color: #c83e38;
+}

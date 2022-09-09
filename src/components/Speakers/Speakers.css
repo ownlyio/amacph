@@ -1,0 +1,14 @@
+#speakers {
+    padding: 5em 0;
+}
+
+.speaker-img,
+.speaker-img img {
+    border-radius: 50%;
+}
+
+.speaker-img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,45 @@
+#faq {
+    padding: 5em 0;
+    background: rgb(187,235,214);
+    background: linear-gradient(48deg, rgba(187,235,214,1) 0%, rgba(255,113,88,1) 100%);
+}
+
+/* content */
+.accordion {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.accordion-button {
+    font-size: 0.8em !important;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid whitesmoke;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    border-color: white !important;
+    box-shadow: none !important;
+}
+
+.accordion-item,
+.accordion-button {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+.accordion-item {
+    border-bottom-color: white;
+}
+
+.accordion-button::after {
+    display: none;
+}
