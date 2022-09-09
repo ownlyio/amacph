@@ -5,7 +5,7 @@ import merchant1 from '../../img/pictures/merchant-pic.jpg'
 
 export default function ApplyMerchant() {
     return (
-        <section id="merchant" className="background-image-cover" style={{"backgroundImage": `url(${merchant})`}}>
+        <section id="apply-merchant" className="background-image-cover" style={{"backgroundImage": `url(${merchant})`}}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-12 col-md-6 order-2 order-md-1">

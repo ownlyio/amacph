@@ -5,10 +5,10 @@ import coPresenter2 from '../../img/sponsors/ayala-malls-legazpi.webp'
 
 export default function Sponsors() {
     return (
-        <section id="sponsors">
+        <section id="partners">
             <div className="container">
                 <div className="sponsors-lists">
-                    <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-color-4 arvo-bold sponsor-title mb-5">Our Sponsors</p>
+                    <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-color-4 arvo-bold sponsor-title mb-5">OUR PARTNERS</p>
                     
                     {/* Co-Presenters */}
                     <div className="sponsors-section">

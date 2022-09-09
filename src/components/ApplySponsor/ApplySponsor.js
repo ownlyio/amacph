@@ -7,7 +7,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function ApplySponsor() {
     return (
-        <section id="amac-apply-sponsor" className="background-image-cover" style={{"backgroundImage": `url(${sponsor})`}}>
+        <section id="apply-sponsor" className="background-image-cover" style={{"backgroundImage": `url(${sponsor})`}}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-12 col-md-5 mb-5 mb-md-0">

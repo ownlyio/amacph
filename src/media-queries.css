@@ -1,3 +1,13 @@
+@media (max-width: 1200px) {
+    #header {
+        height: 83px !important;
+    }
+
+    .amac-nav-logo {
+        width: 55px !important;
+    }
+}
+
 @media (max-width: 991px) {
     #header {
         background: none !important;
@@ -124,6 +134,10 @@
     .sponsor-item {
         width: 170px !important;
     }
+}
 
-    
+@media (max-width: 1400px) and (min-width: 992px) and (max-height: 900px) {
+    .amac-logo {
+        width: 35% !important;
+    }
 }

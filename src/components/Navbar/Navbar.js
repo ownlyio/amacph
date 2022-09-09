@@ -81,22 +81,31 @@ export default function Navbar({ showRegister }) {
                         </Link>
                     </div>
                     <ul className="d-flex justify-content-center align-items-center flex-wrap mb-0 p-0">
-                        <li>
+                        <li className="main-nav">
                             <HashLink className="text-color-6 font-size-120" smooth to="#speakers" scroll={el => scrollWithOffset(el)}>SPEAKERS</HashLink>
                         </li>
-                        <li>
+                        <li className="main-nav">
+                            <HashLink className="text-color-6 font-size-120" smooth to="#events" scroll={el => scrollWithOffset(el)}>EVENTS</HashLink>
+                        </li>
+                        <li className="main-nav dropdown-center">
+                            <a className="nav-link dropdown-toggle text-color-6 font-size-120" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                GET INVOLVED
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li className="sub-nav my-2"><HashLink className="text-color-6 font-size-110 amac-drop" smooth to="#apply-merchant" scroll={el => scrollWithOffset(el)}>Become a Merchant</HashLink></li>
+                                <li className="sub-nav my-2"><HashLink className="text-color-6 font-size-110 amac-drop" smooth to="#apply-sponsor" scroll={el => scrollWithOffset(el)}>Become a Sponsor</HashLink></li>
+                            </ul>
+                        </li>
+                        <li className="main-nav">
                             <HashLink className="text-color-6 font-size-120" smooth to="#tickets" scroll={el => scrollWithOffset(el)}>TICKETS</HashLink>
                         </li>
-                        <li>
-                            <HashLink className="text-color-6 font-size-120" smooth to="#merchant" scroll={el => scrollWithOffset(el)}>MERCHANT</HashLink>
+                        <li className="main-nav">
+                            <HashLink className="text-color-6 font-size-120" smooth to="#partners" scroll={el => scrollWithOffset(el)}>PARTNERS</HashLink>
                         </li>
-                        <li>
-                            <HashLink className="text-color-6 font-size-120" smooth to="#sponsors" scroll={el => scrollWithOffset(el)}>SPONSORS</HashLink>
-                        </li>
-                        <li>
+                        <li className="main-nav">
                             <HashLink className="text-color-6 font-size-120" smooth to="#faq" scroll={el => scrollWithOffset(el)}>FAQ</HashLink>
                         </li>
-                        <li>
+                        <li className="main-nav">
                             <button onClick={showRegister} type="button" className="btn amac-nav-btn btn-custom-2 px-4">
                                 BUY TICKETS
                             </button>
@@ -113,12 +122,14 @@ export default function Navbar({ showRegister }) {
                                 <img src={logo} className="w-100" alt="AMAC Logo" />
                             </Link>
                         </div>
-                        <HashLink smooth to="#speakers" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">SPEAKERS</HashLink>
-                        <HashLink smooth to="#tickets" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">TICKETS</HashLink>
-                        <HashLink smooth to="#merchant" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">MERCHANT</HashLink>
-                        <HashLink smooth to="#sponsors" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">SPONSORS</HashLink>
-                        <HashLink smooth to="#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-100 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
-                        <button onClick={showRegister} type="button" className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-220 w-100">
+                        <HashLink smooth to="#speakers" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">SPEAKERS</HashLink>
+                        <HashLink smooth to="#events" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">EVENTS</HashLink>
+                        <HashLink smooth to="#tickets" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">TICKETS</HashLink>
+                        <HashLink smooth to="#apply-merchant" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">BECOME A MERCHANT</HashLink>
+                        <HashLink smooth to="#apply-sponsor" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">BECOME A SPONSOR</HashLink>
+                        <HashLink smooth to="#partners" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">PARTNERS</HashLink>
+                        <HashLink smooth to="#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
+                        <button onClick={showRegister} type="button" className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-180 w-100">
                             BUY TICKETS
                         </button>
                     </Menu>
