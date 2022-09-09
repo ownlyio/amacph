@@ -1,6 +1,6 @@
 import './About.css'
 
-import about1 from '../../img/pictures/about-1.jpg'
+import about1 from '../../img/pictures/about-pic.jpg'
 
 export default function About() {
     return (
@@ -24,20 +24,20 @@ export default function About() {
                 <div className="about-numbers row justify-content-center align-items-start">
                     <div className="col-12 col-md-4">
                         <div className="about-number-item">
-                            <p className="text-center font-size-200 font-size-sm-270 font-size-md-310 font-size-lg-400 text-color-2 arvo-bold about-qty mb-1">200</p>
+                            <p className="text-center font-size-200 font-size-sm-270 font-size-md-310 font-size-lg-400 text-color-2 arvo-bold about-qty mb-1">2000+</p>
                             <p className="text-center font-size-100 font-size-sm-120 font-size-lg-200 text-color-5 about-qty mb-5 mb-md-0">ATTENDEES</p>
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
                         <div className="about-number-item">
-                            <p className="text-center font-size-200 font-size-sm-270 font-size-md-310 font-size-lg-400 text-color-3 arvo-bold about-qty mb-1">50</p>
+                            <p className="text-center font-size-200 font-size-sm-270 font-size-md-310 font-size-lg-400 text-color-3 arvo-bold about-qty mb-1">50+</p>
                             <p className="text-center font-size-100 font-size-sm-120 font-size-lg-200 text-color-5 about-qty mb-5 mb-md-0">ARTISTS &amp; BRANDS</p>
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
                         <div className="about-number-item">
                             <p className="text-center font-size-200 font-size-sm-270 font-size-md-310 font-size-lg-400 text-color-4 arvo-bold about-qty mb-1">4</p>
-                            <p className="text-center font-size-100 font-size-sm-120 font-size-lg-200 text-color-5 about-qty mb-5 mb-md-0">SPEAKERS</p>
+                            <p className="text-center font-size-100 font-size-sm-120 font-size-lg-200 text-color-5 about-qty mb-5 mb-md-0">ART TALK SPEAKERS</p>
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ export default function Speakers() {
     return (
         <section id="speakers" className="background-image-cover" style={{"backgroundImage": `url(${speakerBg})`}}>
             <div className="container">
-                <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-color-4 arvo-bold speaker-title mb-md-3 mb-lg-5">Speakers</p>
+                <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-color-4 arvo-bold speaker-title mb-md-3 mb-lg-5">SPEAKERS</p>
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-6 col-lg-3">
                         <div className="speaker-item mb-4 p-3">

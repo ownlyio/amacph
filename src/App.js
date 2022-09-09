@@ -7,6 +7,7 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import About from './components/About/About'
+import PastAMAC from './components/PastAMAC/PastAMAC'
 import Speakers from './components/Speakers/Speakers'
 import ApplyTicket from './components/ApplyTicket/ApplyTicket'
 import ApplyMerchant from './components/ApplyMerchant/ApplyMerchant'
@@ -21,6 +22,7 @@ import EventDetails from './pages/EventDetails/EventDetails'
 // modals
 import RegisterModal from './components/_Modals/RegisterModal'
 import PromptModal from './components/_Modals/PromptModal'
+import AMAC17Vid from './components/_Modals/AMAC17Vid'
 
 function App() {
     const [state, setState] = useState({
@@ -39,6 +41,9 @@ function App() {
     const [showResult, setShowResult] = useState(false)
     const handleCloseResult = () => setShowResult(false)
     const handleShowResult = () => setShowResult(true)
+    const [showAmacVideo, setShowAmacVideo] = useState(false)
+    const handleCloseAmacVideo = () => setShowAmacVideo(false)
+    const handleShowAmacVideo = () => setShowAmacVideo(true)
 
     // state updater
     const _setState = (name, value) => {
@@ -108,6 +113,7 @@ function App() {
                     <Route exact path="/">
                         <Banner showRegister={handleShowRegister} />
                         <About />
+                        <PastAMAC showAmacModal={handleShowAmacVideo} />
                         <Speakers />
                         <ApplyTicket state={state} showRegister={handleShowRegister} />
                         <ApplyMerchant />
@@ -122,10 +128,13 @@ function App() {
                 <Footer />
             </Router>
 
+            {/* ----------------------------------------- MODALS ---------------------------------------- */}
             {/* Register */}
             <RegisterModal registerModal={showRegister} closeRegister={handleCloseRegister} isSubmitting={state.isSubmitting} submitForm={submitForm} />
             {/* Result */}
             <PromptModal resultModal={showResult} closeResult={handleCloseResult} result={state.result} resultMsg={state.resultMsg} />
+            {/* AMAC Vid */}
+            <AMAC17Vid vidModal={showAmacVideo} closeVid={handleCloseAmacVideo} />
         </>
     );
 }

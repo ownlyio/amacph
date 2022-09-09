@@ -1,0 +1,25 @@
+#past-amac {
+    background-color: #fcf3f2;
+    padding: 5em 0;
+}
+
+.past-amac-thumbnail {
+    width: 100%;
+    overflow: hidden;
+}
+
+.past-amac-thumbnail img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.past-amac-thumbnail img {
+    transition: transform 0.4s;
+}
+  
+.past-amac-thumbnail:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

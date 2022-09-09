@@ -116,6 +116,12 @@
         width: 100% !important;
         margin: 0.3em 0 !important;
     }
+
+    .past-amac-thumbnail {
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
 
 @media (max-width: 400px) {
