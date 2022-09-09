@@ -22,7 +22,7 @@ export default function PastAMAC({ showAmacModal }) {
                     </div>
                     <div className="col-12 col-sm-6 col-lg-3 cursor-pointer" onClick={showAmacModal}>
                         <div className="past-amac-thumbnail mb-3">
-                            <img src={amac17} alt="AMAC 2016" className="w-100" />
+                            <img src={amac17} alt="AMAC 2017" className="w-100" />
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-lg-3">

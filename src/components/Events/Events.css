@@ -1,0 +1,40 @@
+#events {
+    background-color: #F9FBFD;
+    padding: 5em 0;
+}
+
+.event-item {
+    position: relative;
+}
+
+.events-thumbnail {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.events-thumbnail img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.events-thumbnail img {
+    transition: transform 0.4s;
+}
+  
+.events-thumbnail:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.event-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.event-item-title {
+    padding-left: 0.7em;
+}

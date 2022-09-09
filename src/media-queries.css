@@ -105,6 +105,17 @@
     .sponsor-item {
         width: 200px !important;
     }
+
+    .past-amac-thumbnail,
+    .events-thumbnail {
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .event-item-title {
+        padding-left: 2.7em !important;
+    }
 }
 
 @media (max-width: 440px) {
@@ -115,12 +126,6 @@
     .ticket-reg-btns button {
         width: 100% !important;
         margin: 0.3em 0 !important;
-    }
-
-    .past-amac-thumbnail {
-        width: 80% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
     }
 }
 

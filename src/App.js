@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import About from './components/About/About'
 import PastAMAC from './components/PastAMAC/PastAMAC'
+import Events from './components/Events/Events'
 import Speakers from './components/Speakers/Speakers'
 import ApplyTicket from './components/ApplyTicket/ApplyTicket'
 import ApplyMerchant from './components/ApplyMerchant/ApplyMerchant'
@@ -114,6 +115,7 @@ function App() {
                         <Banner showRegister={handleShowRegister} />
                         <About />
                         <PastAMAC showAmacModal={handleShowAmacVideo} />
+                        <Events />
                         <Speakers />
                         <ApplyTicket state={state} showRegister={handleShowRegister} />
                         <ApplyMerchant />
