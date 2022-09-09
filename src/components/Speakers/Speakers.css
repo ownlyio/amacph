@@ -2,13 +2,38 @@
     padding: 5em 0;
 }
 
-.speaker-img,
-.speaker-img img {
+.speaker-item {
+    border-radius: 15px;
+}
+
+.speaker-cover-photo {
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.speaker-dp {
+    width: 50%;
+    border: 3px solid white;
+}
+
+.speaker-dp, .speaker-dp img {
     border-radius: 50%;
 }
 
-.speaker-img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.speaker-content {
+    background-color: #f7f7f7;
+    border-radius: 0 0 15px 15px;
+}
+
+.speaker-btn {
+    font-size: 1em !important;
+}
+
+.speaker-job {
+    height: 50px;
+}
+
+.speaker-desc {
+    height: 130px;
 }

@@ -22,7 +22,7 @@ export default function Events() {
                                 <img src={artTalks} alt="Art Talks" className="w-100" />
                             </div>
                             <div className="event-content">
-                                <p className="text-start font-size-130 font-size-sm-160 font-size-lg-250 text-white event-item-title">ART TALKS</p>
+                                <p className="text-start font-size-120 font-size-sm-160 font-size-lg-250 text-white event-item-title">ART TALKS</p>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ export default function Events() {
                                 <img src={artFair} alt="Art Fair" className="w-100" />
                             </div>
                             <div className="event-content">
-                                <p className="text-start font-size-130 font-size-sm-160 font-size-lg-250 text-white event-item-title">ART FAIR</p>
+                                <p className="text-start font-size-120 font-size-sm-160 font-size-lg-250 text-white event-item-title">ART FAIR</p>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ export default function Events() {
                                 <img src={artExhibit} alt="Art Exhibit" className="w-100" />
                             </div>
                             <div className="event-content">
-                                <p className="text-start font-size-130 font-size-sm-160 font-size-lg-250 text-white event-item-title">ART EXHIBIT</p>
+                                <p className="text-start font-size-120 font-size-sm-160 font-size-lg-250 text-white event-item-title">ART EXHIBIT</p>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ export default function Events() {
                                 <img src={photowalk} alt="Photowalk" className="w-100" />
                             </div>
                             <div className="event-content">
-                                <p className="text-start font-size-130 font-size-sm-160 font-size-lg-250 text-white event-item-title">PHOTOWALK</p>
+                                <p className="text-start font-size-120 font-size-sm-160 font-size-lg-250 text-white event-item-title">PHOTOWALK</p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ export default function Events() {
                                 <img src={coloring} alt="Coloring for Kids" className="w-100" />
                             </div>
                             <div className="event-content">
-                                <p className="text-start font-size-130 font-size-sm-160 font-size-lg-250 text-white event-item-title">COLORING FOR KIDS</p>
+                                <p className="text-start font-size-120 font-size-sm-160 font-size-lg-250 text-white event-item-title">COLORING FOR KIDS</p>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ export default function Events() {
                                 <img src={musicJam} alt="MUSIC JAM" className="w-100" />
                             </div>
                             <div className="event-content">
-                                <p className="text-start font-size-130 font-size-sm-160 font-size-lg-250 text-white event-item-title">MUSIC JAM</p>
+                                <p className="text-start font-size-120 font-size-sm-160 font-size-lg-250 text-white event-item-title">MUSIC JAM</p>
                             </div>
                         </div>
                     </div>
