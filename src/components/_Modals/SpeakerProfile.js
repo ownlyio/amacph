@@ -1,10 +1,22 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react'
 import { Modal } from 'react-bootstrap'
 import { faTwitter, faInstagram, faLinkedinIn, faBehance } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import ViewPhoto from './ViewPhoto'
 import './Modals.css'
 
 export default function SpeakerProfile({ profileModal, closeProfile, profile }) {
+    const [worksImg, setWorksImg] = useState(profile.works[0])
+    const [worksAlt, setWorksAlt] = useState("")
+    const [showImage, setShowImage] = useState(false)
+    const handleCloseImage = () => setShowImage(false)
+    const handleShowImage = (url, altText) => {
+        setWorksImg(url)
+        setWorksAlt(altText)
+        setShowImage(true)
+    }
+
     return (
         <Modal show={profileModal} onHide={closeProfile} backdrop="static" keyboard={false} size="lg" centered>
             <Modal.Body className="p-0 position-relative">
@@ -19,7 +31,7 @@ export default function SpeakerProfile({ profileModal, closeProfile, profile }) 
                         <div className="speaker-primer mb-4">
                             <p className="text-start font-size-100 font-size-md-110 font-size-lg-120 text-color-6 arvo-bold speaker-name mb-1">{profile.name}</p>
                             <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 arvo-italic speaker-desig mb-1">{profile.designation}</p>
-                            <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 arvo-italic speaker-org mb-1"><b>Affiliation/Organization/Company/Brand:</b> {profile.organization}</p>
+                            <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 arvo-italic speaker-org mb-1"><b>Affiliation/Brand:</b> {profile.organization}</p>
                         </div>
                         <div className="speaker-details">
                             { profile.description.map((x, i) => (
@@ -30,7 +42,7 @@ export default function SpeakerProfile({ profileModal, closeProfile, profile }) 
                             <p className="text-center font-size-80 font-size-md-90 font-size-lg-110 text-color-6 arvo-bold speaker-det mb-3">Sample Artworks</p>
                             <div className="d-flex flex-wrap justify-content-center">
                                 { profile.works.map((x, i) => (
-                                    <div key={i} className="speakers-det-thumbnail mb-3 mx-0 mx-sm-3">
+                                    <div key={i} onClick={() => handleShowImage(x, i)} className="speakers-det-thumbnail mb-3 mx-0 mx-sm-3 cursor-pointer">
                                         <img src={x} alt={`Artwork #${i}`} className="w-100" />
                                     </div>
                                 ))}
@@ -68,6 +80,8 @@ export default function SpeakerProfile({ profileModal, closeProfile, profile }) 
             <Modal.Footer>
                 <button onClick={closeProfile} className="btn px-5 ticket-cancel-btn">CLOSE</button>
             </Modal.Footer>
+
+            <ViewPhoto picModal={showImage} closePic={handleCloseImage} picture={worksImg} altText={worksAlt} />
         </Modal>
     )
 }
