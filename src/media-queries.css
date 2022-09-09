@@ -5,6 +5,10 @@
         padding: 0 !important;
     }
 
+    .amac-logo {
+        width: 60% !important;
+    }
+
     button.def, a.def {
         font-size: 1.2em !important;
     }
@@ -28,7 +32,7 @@
 
 @media (max-width: 767px) {
     .amac-logo {
-        width: 60% !important;
+        width: 70% !important;
     }
 
     .about-desc,
@@ -68,6 +72,10 @@
 }
 
 @media (max-width: 576px) {
+    .amac-logo {
+        width: 300px !important;
+    }
+
     button.def, a.def {
         font-size: 1em !important;
     }
@@ -102,7 +110,7 @@
 
 @media (max-width: 400px) {
     .amac-logo {
-        width: 70% !important;
+        width: 80% !important;
     }
 
     .ticket-inclusion-item {
