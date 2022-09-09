@@ -57,7 +57,7 @@ export default function ApplyTicket({ state, showRegister }) {
                     <div className="col-12 col-md-6 offset-md-1">
                         <p className="text-center text-md-start font-size-110 font-size-sm-130 font-size-md-180 font-size-lg-230 text-white arvo-bold ticket-sub mb-5">INCLUSIONS</p>
 
-                        <div className="row justify-content-evenly align-items-start flex-wrap mb-md-3 mb-lg-5">
+                        <div className="row justify-content-evenly align-items-start flex-wrap mb-md-3 mb-lg-0">
                             <div className="ticket-inclusion-item p-3 mb-4">
                                 <div className="text-center mb-4">
                                     <FontAwesomeIcon className="inclusion-icon" icon={faTicketAlt} color="white" size="4x" />
@@ -72,14 +72,14 @@ export default function ApplyTicket({ state, showRegister }) {
                                 <p className="text-center font-size-100 font-size-sm-110 font-size-lg-140 text-white inclusion-desc mb-2">AMAC2022 freebies</p>
                                 <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Event shirt designed by Lei Melendres and more!</p>
                             </div>
-                            <div className="ticket-inclusion-item p-3 mb-4">
+                            <div className="ticket-inclusion-item p-3">
                                 <div className="text-center mb-4">
                                     <FontAwesomeIcon className="inclusion-icon" icon={faUsers} color="white" size="4x" />
                                 </div>
                                 <p className="text-center font-size-100 font-size-sm-110 font-size-lg-140 text-white inclusion-desc mb-2">Networking</p>
                                 <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Connect and meet fellow creative minds in the event</p>
                             </div>
-                            <div className="ticket-inclusion-item p-3 mb-4">
+                            <div className="ticket-inclusion-item p-3">
                                 <div className="text-center mb-4">
                                     <FontAwesomeIcon className="inclusion-icon" icon={faCertificate} color="white" size="4x" />
                                 </div>
