@@ -74,7 +74,7 @@ function App() {
         } else {
             handleShowRegister()
         }
-    }   
+    }
 
     const submitForm = e => {
         e.preventDefault()

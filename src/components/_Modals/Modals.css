@@ -21,6 +21,20 @@
     object-fit: cover;
 }
 
+.video-close-btn {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    background-color: #ff7158;
+    border-radius: 50%;
+    font-weight: bold !important;
+}
+
+.video-close-btn:hover,
+.video-close-btn:focus {
+    background-color: #ff6047;
+}
+
 @media (max-width: 768px) {
     /* .past-amac-thumbnail, */
     .past-amac-video {
@@ -40,4 +54,31 @@
     .past-amac-video {
         height: 200px;
     }
+}
+
+/* Speakers */
+.no-rounded {
+    border-radius: 0.3rem 0.3rem 0 0 !important;
+}
+
+.speakers-det-thumbnail {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.speakers-det-thumbnail img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.speakers-det-thumbnail img {
+    transition: transform 0.4s;
+}
+  
+.speakers-det-thumbnail:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
