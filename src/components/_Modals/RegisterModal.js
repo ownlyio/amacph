@@ -56,7 +56,7 @@ export default function RegisterModal({ registerModal, closeRegister, isSubmitti
                         <div className="col-12 col-lg-6 order-1 order-lg-2">
                             <p className="text-center font-size-130 font-size-md-160 font-size-lg-200 text-color-3 arvo-bold ticket-title mb-4">PAYMENT</p>
                             <div className="register-instructions mb-4">
-                                <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-3"><b>Ticket Price:</b> ₱ 500 inclusive of AMAC Shirt  </p>
+                                <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-3"><b>Ticket Price:</b> ₱ 599 inclusive of AMAC Shirt  </p>
                                 <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-3 arvo-bold">Payment Options:</p>
 
                                 <p className="font-size-90 font-size-sm-100 font-size-lg-120 text-color-6 ticket-instructions-text mb-1 arvo-italic">GCash</p>
