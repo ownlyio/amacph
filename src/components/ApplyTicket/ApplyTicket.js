@@ -36,7 +36,7 @@ export default function ApplyTicket({ state, showRegister }) {
                         </div>
 
                         <div className="ticket-wrap">
-                            <p className="text-center font-size-200 font-size-sm-270 font-size-md-310 font-size-lg-400 text-white arvo-bold ticket-price mb-2">₱ 500</p>
+                            <p className="text-center font-size-200 font-size-sm-270 font-size-md-310 font-size-lg-400 text-white arvo-bold ticket-price mb-2">₱ 599</p>
                             <p className="text-center font-size-150 font-size-sm-170 font-size-md-210 font-size-lg-300 text-color-4 arvo-bold ticket-price mb-2">ART TALK PASS</p>
                             <p className="text-center font-size-100 font-size-md-110 font-size-lg-120 text-white ticket-det mb-5">Each ticket includes an AMAC2022 X Lei Melendres shirt plus a FREE MINT slot of Mustachio RASCALS NFT</p>
 
