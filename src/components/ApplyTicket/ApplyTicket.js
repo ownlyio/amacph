@@ -45,14 +45,14 @@ export default function ApplyTicket({ state, showRegister }) {
                                     <FontAwesomeIcon className="inclusion-icon" icon={faTicketAlt} color="white" size="4x" />
                                 </div>
                                 <p className="text-center font-size-100 font-size-sm-110 font-size-lg-140 text-white inclusion-desc mb-2">Event Admission</p>
-                                <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">4 speakers sharing their art journey filled-with inspiration and learnings</p>
+                                <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white neo-regular-italic inclusion-desc-sub mb-0">4 speakers sharing their art journey filled-with inspiration and learnings</p>
                             </div>
                             <div className="ticket-inclusion-item p-3 mb-2">
                                 <div className="text-center mb-3">
                                     <FontAwesomeIcon className="inclusion-icon" icon={faGifts} color="white" size="4x" />
                                 </div>
                                 <p className="text-center font-size-100 font-size-sm-110 font-size-lg-140 text-white inclusion-desc mb-2">AMAC2022 freebies</p>
-                                <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Event shirt designed by Lei Melendres and more!</p>
+                                <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white neo-regular-italic inclusion-desc-sub mb-0">Event shirt designed by Lei Melendres and more!</p>
                             </div>
                             <div className="ticket-inclusion-item p-3">
                                 <div className="text-center mb-3">

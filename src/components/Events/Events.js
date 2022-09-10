@@ -13,7 +13,7 @@ export default function Events() {
         <section id="events">
             <div className="container">
                 <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-color-4 arvo-bold events-title mb-4">CELEBRATING CREATIVITY</p>
-                <p className="text-center font-size-100 font-size-sm-120 font-size-lg-140 text-color-5 events-desc mb-5">Join with us as we celebrate the creativity of our talented local artists by the following set of events:</p>
+                <p className="text-center font-size-100 font-size-sm-120 font-size-lg-140 text-color-5 events-desc neo-regular mb-5">Join with us as we celebrate the creativity of our talented local artists by the following set of events:</p>
                 
                 <div className="row">
                     <div className="col-12 col-sm-6 col-md-4 mb-3">
@@ -76,6 +76,10 @@ export default function Events() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="text-center mb-5 mb-md-0">
+                    <button type="button" className="btn btn-custom-2 py-2 px-4 mt-4 fw-bold">FULL EVENT DETAILS TBA</button>
                 </div>
             </div>
         </section>

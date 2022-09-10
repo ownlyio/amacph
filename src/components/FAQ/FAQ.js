@@ -15,7 +15,7 @@ export default function FAQ() {
                         </h2>
                         <div id="flush-collapse-1" className="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                             <div className="accordion-body">
-                                <p className="font-size-100 font-size-lg-120">Yes! If you appreciate art, passionate about design and creative at heart, you are very welcome to attend the event. The event is open to everyone!</p>
+                                <p className="font-size-100 font-size-lg-120 neo-regular">Yes! If you appreciate art, passionate about design and creative at heart, you are very welcome to attend the event. The event is open to everyone!</p>
                             </div>
                         </div>
                     </div>

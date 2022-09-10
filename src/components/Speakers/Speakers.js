@@ -42,9 +42,9 @@ export default function Speakers() {
                             </div>
                             <div className="speaker-content p-3">
                                 <p className="text-start font-size-100 font-size-md-110 font-size-lg-120 text-color-6 arvo-bold speaker-name mb-1">Lei Melendres</p>
-                                <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 arvo-italic speaker-job mb-3">Illustrator/Doodle Artist</p>
+                                <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 neo-regular-italic speaker-job mb-3">Illustrator/Doodle Artist</p>
 
-                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 arvo-italic speaker-desc">Lei Melendres is a full-time freelance illustrator from the Philippines whose art style is focused on illustrations specifically, doodle art.</p>
+                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 neo-regular-italic speaker-desc">Lei Melendres is a full-time freelance illustrator from the Philippines whose art style is focused on illustrations specifically, doodle art.</p>
                                 <div className="text-center">
                                     <button onClick={() => handleShowSpeakerProfile(speakers[0])} type="button" className="btn speaker-btn mb-3">READ MORE</button>
                                 </div>
@@ -72,9 +72,9 @@ export default function Speakers() {
                             </div>
                             <div className="speaker-content p-3">
                                 <p className="text-start font-size-100 font-size-md-110 font-size-lg-120 text-color-6 arvo-bold speaker-name mb-1">Jopet Arias</p>
-                                <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 arvo-italic speaker-job mb-3">Forerunner, Artist and Digital Nomad</p>
+                                <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 neo-regular-italic speaker-job mb-3">Forerunner, Artist and Digital Nomad</p>
 
-                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 arvo-italic speaker-desc">One of the Forerunners of Crypto Art movement in the Ph, First batch of Artist that was featured on CAWA. Co-founder of CryptoartPh and a member of The Guild.</p>
+                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 neo-regular-italic speaker-desc">One of the Forerunners of Crypto Art movement in the Ph, First batch of Artist that was featured on CAWA. Co-founder of CryptoartPh and a member of The Guild.</p>
                                 <div className="text-center">
                                     <button onClick={() => handleShowSpeakerProfile(speakers[1])} type="button" className="btn speaker-btn mb-3">READ MORE</button>
                                 </div>
@@ -102,9 +102,9 @@ export default function Speakers() {
                             </div>
                             <div className="speaker-content p-3">
                                 <p className="text-start font-size-100 font-size-md-110 font-size-lg-120 text-color-6 arvo-bold speaker-name mb-1">Karl Vasquez</p>
-                                <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 arvo-italic speaker-job mb-3">Creative Director</p>
+                                <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 neo-regular-italic speaker-job mb-3">Creative Director</p>
 
-                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 arvo-italic speaker-desc">Karl is the Founder and Creative Director of the community-based streetwear brand, Bounce Back PH and also the artist of the NFT Collection, Old Chap Club.</p>
+                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 neo-regular-italic speaker-desc">Karl is the Founder and Creative Director of the community-based streetwear brand, Bounce Back PH and also the artist of the NFT Collection, Old Chap Club.</p>
                                 <div className="text-center">
                                     <button onClick={() => handleShowSpeakerProfile(speakers[2])} type="button" className="btn speaker-btn mb-3">READ MORE</button>
                                 </div>
@@ -132,9 +132,9 @@ export default function Speakers() {
                             </div>
                             <div className="speaker-content p-3">
                                 <p className="text-start font-size-100 font-size-md-110 font-size-lg-120 text-color-6 arvo-bold speaker-name mb-1">John Verlin Santos</p>
-                                <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 arvo-italic speaker-job mb-3">Spoken Word Artist</p>
+                                <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 neo-regular-italic speaker-job mb-3">Spoken Word Artist</p>
 
-                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 arvo-italic speaker-desc">John founded Titik Poetry, a Non-Government Organization Cavite-based art collective, that aims to make art a platform for education.</p>
+                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 neo-regular-italic speaker-desc">John founded Titik Poetry, a Non-Government Organization Cavite-based art collective, that aims to make art a platform for education.</p>
                                 <div className="text-center">
                                     <button onClick={() => handleShowSpeakerProfile(speakers[3])} type="button" className="btn speaker-btn mb-3">READ MORE</button>
                                 </div>
