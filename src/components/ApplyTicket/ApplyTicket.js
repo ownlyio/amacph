@@ -9,7 +9,7 @@ export default function ApplyTicket({ state, showRegister }) {
     return (
         <section id="tickets">
             <div className="container">
-                <div className="row align-items-center">
+                <div className="row justify-content-center align-items-center">
                     <div className="col-12 mb-5 mb-md-0">
                         <p className="text-center w-100 font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-white arvo-bold ticket-title mb-1">BUY TICKETS</p>
                         <p className="text-center w-100 font-size-90 font-size-md-100 font-size-lg-140 text-white arvo-bold ticket-title mb-5">TICKET INCLUSIONS:</p>
@@ -71,24 +71,24 @@ export default function ApplyTicket({ state, showRegister }) {
                         </div>
                     </div>
 
-                    <div className="col-12 mt-5">
+                    <div className="col-sm-10 col-lg-8 col-xl-6 mt-5">
                         <div className="ticket-wrap">
                             <p className="text-center font-size-270 font-size-md-310 font-size-lg-400 text-white arvo-bold ticket-price mb-2">₱599</p>
                             <p className="text-center font-size-150 font-size-sm-170 font-size-md-210 font-size-lg-300 text-color-4 arvo-bold ticket-price mb-2">ART TALK PASS</p>
-                            <p className="text-center font-size-100 font-size-md-110 font-size-lg-120 text-white ticket-det mb-5">Each ticket includes an AMAC2022 X Lei Melendres shirt plus a FREE MINT slot of Mustachio RASCALS NFT</p>
+                            <p className="text-center font-size-100 font-size-md-110 font-size-lg-120 text-white ticket-det line-height-150 mb-5">Each ticket includes an AMAC2022 X Lei Melendres shirt plus a FREE MINT slot of Mustachio RASCALS NFT</p>
 
-                            <p className="text-center font-size-sm-100 font-size-lg-120 text-white ticket-available mb-3">Available Tickets</p>
-                            {/* Range */}
-                            <div className="ticket-range-wrap">
-                                <div className="ticket-range-outer">
-                                    <div className="ticket-range-inner" style={{ "width": `${state.percentageAvailable}%` }}></div>
-                                </div>
-                            </div>
-                            <p className="text-center font-size-100 font-size-lg-120 text-white ticket-available-qty mb-5">{state.availableTickets}/{state.maxTickets}</p>
+                            {/*<p className="text-center font-size-sm-100 font-size-lg-120 text-white ticket-available mb-3">Available Tickets</p>*/}
+                            {/*/!* Range *!/*/}
+                            {/*<div className="ticket-range-wrap">*/}
+                            {/*    <div className="ticket-range-outer">*/}
+                            {/*        <div className="ticket-range-inner" style={{ "width": `${state.percentageAvailable}%` }}></div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
+                            {/*<p className="text-center font-size-100 font-size-lg-120 text-white ticket-available-qty mb-5">{state.availableTickets}/{state.maxTickets}</p>*/}
 
-                            <div className="text-center">
-                                <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={state.isSoldOut}>{state.isSoldOut ? "SOLD OUT" : "BUY NOW!"}</button>
-                            </div>
+                            {/*<div className="text-center">*/}
+                            {/*    <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={state.isSoldOut}>{state.isSoldOut ? "SOLD OUT" : "BUY NOW!"}</button>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>                
