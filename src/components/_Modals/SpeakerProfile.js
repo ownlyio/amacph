@@ -42,8 +42,12 @@ export default function SpeakerProfile({ profileModal, closeProfile, profile }) 
                             <p className="text-center font-size-80 font-size-md-90 font-size-lg-110 text-color-6 arvo-bold speaker-det mb-3">Sample Artworks</p>
                             <div className="d-flex flex-wrap justify-content-center">
                                 { profile.works.map((x, i) => (
-                                    <div key={i} onClick={() => handleShowImage(x, i)} className="speakers-det-thumbnail mb-3 mx-0 mx-sm-3 cursor-pointer">
-                                        <img src={x} alt={`Artwork #${i}`} className="w-100" />
+                                    <div key={i} onClick={ (!x.includes(".mp4")) ? () => handleShowImage(x, i) : null} className="speakers-det-thumbnail mb-3 mx-0 mx-sm-3 cursor-pointer">
+                                        { (!x.includes(".mp4")) && <img src={x} alt={`Artwork #${i}`} className="w-100" /> }
+                                        { (x.includes(".mp4")) &&
+                                        <video style={{"width":"100%","height":"100%"}} controls>
+                                            <source src={x} type="video/mp4" />
+                                        </video> }
                                     </div>
                                 ))}
                             </div>

@@ -27,6 +27,11 @@ import karl3 from '../img/speakers/works/Karl/3.jpg'
 import karl5 from '../img/speakers/works/Karl/5.jpg'
 // john
 import john2 from '../img/speakers/works/John/2.jpg'
+import john3 from '../img/speakers/works/John/3.mp4'
+import john4 from '../img/speakers/works/John/4.mp4'
+import john5 from '../img/speakers/works/John/5.mp4'
+import john6 from '../img/speakers/works/John/6.mp4'
+import john7 from '../img/speakers/works/John/7.mp4'
 
 const speakers = [
     {
@@ -119,6 +124,11 @@ const speakers = [
         works: [
             artJohn,
             john2,
+            john3,
+            john4,
+            john5,
+            john6,
+            john7,
         ],
         instagram: "https://www.instagram.com/verlin_santos/",
         twitter: "https://twitter.com/TitikAtSigya",
