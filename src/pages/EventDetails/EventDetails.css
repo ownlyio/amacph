@@ -1,0 +1,10 @@
+#art-schedule {
+    padding: 5em 0;
+    background: rgb(255,182,0);
+    background: linear-gradient(39deg, rgba(255,182,0,1) 0%, rgba(255,113,88,1) 100%);
+}
+
+.art-sections {
+    padding: 5em 0;
+    height: 70vh;
+}

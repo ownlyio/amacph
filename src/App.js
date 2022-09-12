@@ -138,7 +138,7 @@ function App() {
                         <FAQ />
                     </Route>
                     <Route exact path="/event-details">
-                        <EventDetails />
+                        <EventDetails state={state} showRegister={availableTickets} />
                     </Route>
                 </Switch>
                 <Footer />

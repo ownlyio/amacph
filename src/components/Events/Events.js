@@ -79,7 +79,7 @@ export default function Events() {
                 </div>
 
                 <div className="text-center mb-5 mb-md-0">
-                    <button type="button" className="btn btn-custom-2 py-2 px-4 mt-4 fw-bold">FULL EVENT DETAILS TBA</button>
+                    <a href="/event-details" rel="noreferrer" className="def btn btn-custom-2 py-2 px-4 mt-4 fw-bold">EVENT DETAILS</a>
                 </div>
             </div>
         </section>

@@ -13,7 +13,7 @@ export default function About() {
                         <p className="text-center text-md-start font-size-100 font-size-sm-120 font-size-lg-140 text-color-5 about-desc">For this year’s AMAC, we will explore the intersection of art and technology in the biggest event celebrating creativity in the Bicol Region.</p>
 
                         <div className="text-center text-md-start mb-5 mb-md-0">
-                            <button type="button" className="btn btn-custom-2 py-2 px-4 mt-4 fw-bold">FULL EVENT DETAILS TBA</button>
+                            <a href="/event-details" rel="noreferrer" className="def btn btn-custom-2 py-2 px-4 mt-4 fw-bold">EVENT DETAILS</a>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0">
