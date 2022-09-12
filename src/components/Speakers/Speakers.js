@@ -33,7 +33,7 @@ export default function Speakers() {
                 <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-color-4 arvo-bold speaker-title mb-4 mb-lg-5">SPEAKERS</p>
                 <div className="row justify-content-center">
 
-                    <div className="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div className="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                         <div className="speaker-item">
                             <div className="speaker-cover-photo d-flex justify-content-center align-items-center background-image-cover" style={{ "backgroundImage": `url(${artLei})` }}>
                                 <div className="speaker-dp">
@@ -61,9 +61,11 @@ export default function Speakers() {
                                     </a>
                                 </div>
                             </div>
+                            <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-6 neo-regular speaker-topic-title mt-3 mb-1">Topic:</p>
+                            <p className="text-start font-size-110 font-size-md-120 font-size-lg-140 text-color-6 neo-bold speaker-topic-title mb-0">ILLUSTRATION WITH NFT</p>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div className="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                         <div className="speaker-item">
                             <div className="speaker-cover-photo d-flex justify-content-center align-items-center background-image-cover" style={{ "backgroundImage": `url(${artJopet})` }}>
                                 <div className="speaker-dp">
@@ -91,9 +93,11 @@ export default function Speakers() {
                                     </a>
                                 </div>
                             </div>
+                            <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-6 neo-regular speaker-topic-title mt-3 mb-1">Topic:</p>
+                            <p className="text-start font-size-110 font-size-md-120 font-size-lg-140 text-color-6 neo-bold speaker-topic-title mb-0">FINE ART WITH NFT</p>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 col-lg-3 mb-3 mb-md-0">
+                    <div className="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
                         <div className="speaker-item">
                             <div className="speaker-cover-photo d-flex justify-content-center align-items-center background-image-cover" style={{ "backgroundImage": `url(${artKarl})` }}>
                                 <div className="speaker-dp">
@@ -121,6 +125,8 @@ export default function Speakers() {
                                     </a>
                                 </div>
                             </div>
+                            <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-6 neo-regular speaker-topic-title mt-3 mb-1">Topic:</p>
+                            <p className="text-start font-size-110 font-size-md-120 font-size-lg-140 text-color-6 neo-bold speaker-topic-title mb-0">BRANDING/GRAPHIC DESIGN WITH NFT</p>
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-lg-3">
@@ -151,6 +157,8 @@ export default function Speakers() {
                                     </a>
                                 </div>
                             </div>
+                            <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-6 neo-regular speaker-topic-title mt-3 mb-1">Topic:</p>
+                            <p className="text-start font-size-110 font-size-md-120 font-size-lg-140 text-color-6 neo-bold speaker-topic-title mb-0">SPOKEN WORD WITH NFT</p>
                         </div>
                     </div>
                 </div>
