@@ -2,6 +2,7 @@ import './Sponsors.css'
 
 import coPresenter1 from '../../img/sponsors/ownly.png'
 import coPresenter2 from '../../img/sponsors/ayala-malls-legazpi.webp'
+import mediaPartner from '../../img/sponsors/bitpinas.png'
 
 export default function Sponsors() {
     return (
@@ -25,17 +26,17 @@ export default function Sponsors() {
                         </div>
                     </div>
 
-                    {/* Major Sponsors */}
-                    {/* <div className="sponsors-section">
-                        <p className="text-center font-size-lg-140 text-color-5 arvo-italic sponsor-title mb-1">Major Sponsors</p>
+                    {/* Official Media Partner */}
+                    <div className="sponsors-section">
+                        <p className="text-center font-size-100 font-size-lg-140 text-color-5 arvo-italic sponsor-title mb-sm-4 mb-md-1">Official Media Partner</p>
                         <div className="sponsors-wrap">
                             <div className="sponsors-row d-flex justify-content-evenly align-items-center my-md-3 my-lg-5 flex-wrap">
                                 <div className="sponsor-item my-3 my-md-0 mx-md-3">
-                                    <img src={logo} alt="Sponsor Logo" className="w-100" />
+                                    <img src={mediaPartner} alt="Sponsor Logo" className="w-100" />
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>
