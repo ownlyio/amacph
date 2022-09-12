@@ -128,7 +128,7 @@ function App() {
                     <Route exact path="/">
                         <Banner showRegister={availableTickets} />
                         <About />
-                        <PastAMAC showAmacModal={handleShowAmacVideo} />
+                        <PastAMAC />
                         <Events />
                         <Speakers />
                         <ApplyTicket state={state} showRegister={availableTickets} />
