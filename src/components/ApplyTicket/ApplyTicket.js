@@ -33,7 +33,7 @@ export default function ApplyTicket({ state, showRegister }) {
                                     <div className="ticket-img mx-auto">
                                         <img src={rascal} alt="Mustachio Rascals" className="w-100" />
                                     </div>
-                                    <p className="text-center font-size-100 font-size-md-110 font-size-lg-130 text-white arvo-italic ticket-det mb-3">3D Mustachio Rascals</p>
+                                    <p className="text-center font-size-100 font-size-md-110 font-size-lg-130 text-white arvo-italic ticket-det mb-3">3D <a href="https://mustachioverse.com/rascals" target="_blank" rel="noreferrer" className="link-color-1">Mustachio Rascals NFT</a> (Non-Fungible Token)</p>
                                 </div>
                             </div>
                         </div>
