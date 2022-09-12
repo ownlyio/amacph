@@ -21,28 +21,30 @@ export default function Banner({ showRegister }) {
                     <button onClick={showRegister} className="def btn btn-custom-1 px-5 mb-3 banner-btn">BUY TICKETS</button>
                     <p className="font-size-80 font-size-md-100 neo-regular-italic text-center text-white mb-0 banner-text">Note: Only the Art Talks is ticketed, all activities is open and free for the community</p>
                 </div>
-            </div>
-            <div className="banner-sponsors mt-4 px-5 d-flex justify-content-between align-items-start flex-wrap">
-                <div className="banner-sponsor-1 mb-4 mb-md-0">
-                    <p className="font-size-80 font-size-md-100 neo-regular text-center text-md-start text-white mb-3 banner-sponsor-1-text">ORGANIZED AND CO-PRESENTED BY:</p>
-                    <div className="d-flex justify-content-center justify-content-md-start align-items-center flex-wrap">
-                        <div className="banner-sponsor-1-img-wrap me-4 mb-3 mb-md-0">
-                            <img className="w-100" src={ownly} alt="Ownly Logo" />
+
+                <div className="banner-sponsors mt-4 px-5 d-flex justify-content-center justify-content-lg-between align-items-start flex-wrap w-100">
+                    <div className="banner-sponsor-1 mb-2 mb-lg-0">
+                        <p className="font-size-80 font-size-md-100 neo-regular text-center text-lg-start text-white mb-3 banner-sponsor-1-text">ORGANIZED AND CO-PRESENTED BY:</p>
+                        <div className="d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap">
+                            <div className="banner-sponsor-1-img-wrap me-4 mb-3 mb-lg-0">
+                                <img className="w-100" src={ownly} alt="Ownly Logo" />
+                            </div>
+                            <div className="banner-sponsor-1-img-wrap mb-3 mb-lg-0">
+                                <img className="w-100" src={ayala} alt="Ayala Logo" />
+                            </div>
                         </div>
-                        <div className="banner-sponsor-1-img-wrap mb-3 mb-md-0">
-                            <img className="w-100" src={ayala} alt="Ayala Logo" />
+                    </div>
+                    <div className="banner-sponsor-2">
+                        <p className="font-size-80 font-size-md-100 neo-regular text-center text-lg-end text-white mb-3 banner-sponsor-2-text">OFFICIAL MEDIA PARTNER:</p>
+                        <div className="d-flex justify-content-center justify-content-lg-end align-items-center">
+                            <div className="banner-sponsor-2-img-wrap">
+                                <img className="w-100" src={bitpinas} alt="BitPinas Logo" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="banner-sponsor-2">
-                    <p className="font-size-80 font-size-md-100 neo-regular text-center text-md-end text-white mb-3 banner-sponsor-2-text">OFFICIAL MEDIA PARTNER:</p>
-                    <div className="d-flex justify-content-center justify-content-md-end align-items-center">
-                        <div className="banner-sponsor-2-img-wrap">
-                            <img className="w-100" src={bitpinas} alt="BitPinas Logo" />
-                        </div>
-                    </div>
-                </div>
             </div>
+            
         </section>
     )
 }
