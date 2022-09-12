@@ -86,9 +86,9 @@ export default function ApplyTicket({ state, showRegister }) {
                             {/*</div>*/}
                             {/*<p className="text-center font-size-100 font-size-lg-120 text-white ticket-available-qty mb-5">{state.availableTickets}/{state.maxTickets}</p>*/}
 
-                            {/*<div className="text-center">*/}
-                            {/*    <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={state.isSoldOut}>{state.isSoldOut ? "SOLD OUT" : "BUY NOW!"}</button>*/}
-                            {/*</div>*/}
+                            <div className="text-center pt-3">
+                                <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={state.isSoldOut}>{state.isSoldOut ? "SOLD OUT" : "BUY NOW!"}</button>
+                            </div>
                         </div>
                     </div>
                 </div>                
