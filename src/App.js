@@ -41,9 +41,6 @@ function App() {
     const [showResult, setShowResult] = useState(false)
     const handleCloseResult = () => setShowResult(false)
     const handleShowResult = () => setShowResult(true)
-    const [showAmacVideo, setShowAmacVideo] = useState(false)
-    const handleCloseAmacVideo = () => setShowAmacVideo(false)
-    const handleShowAmacVideo = () => setShowAmacVideo(true)
 
     // state updater
     const _setState = (name, value) => {
