@@ -23,7 +23,6 @@ import EventDetails from './pages/EventDetails/EventDetails'
 // modals
 import RegisterModal from './components/_Modals/RegisterModal'
 import PromptModal from './components/_Modals/PromptModal'
-import AMAC17Vid from './components/_Modals/AMAC17Vid'
 
 function App() {
     const [state, setState] = useState({
@@ -149,8 +148,6 @@ function App() {
             <RegisterModal registerModal={showRegister} closeRegister={handleCloseRegister} isSubmitting={state.isSubmitting} submitForm={submitForm} />
             {/* Result */}
             <PromptModal resultModal={showResult} closeResult={handleCloseResult} result={state.result} resultMsg={state.resultMsg} />
-            {/* AMAC Vid */}
-            <AMAC17Vid vidModal={showAmacVideo} closeVid={handleCloseAmacVideo} />
         </>
     );
 }
