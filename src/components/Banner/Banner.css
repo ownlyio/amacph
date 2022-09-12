@@ -1,4 +1,12 @@
-.amac-logo {
-  width: 43%;
-  margin: 0 auto 1.3em;
+#amac-banner {
+  padding: 70px 0;
+}
+
+.banner-sub {
+  margin-bottom: 2.3rem;
+}
+
+.banner-sponsor-1-img-wrap,
+.banner-sponsor-2-img-wrap {
+  width: 200px;
 }
