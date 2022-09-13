@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import axios from 'axios'
 import './App.css'
 
@@ -27,8 +27,7 @@ import PromptModal from './components/_Modals/PromptModal'
 function App() {
     const [state, setState] = useState({
         maxTickets: 200,
-        availableTickets: 200,
-        percentageAvailable: 100,
+        isLoading: false,
         isSubmitting: false,
         isSoldOut: false,
         result: false,
@@ -47,29 +46,37 @@ function App() {
         setState(prevState => ({ ...prevState, [name]: value }))
     }
 
-    const computeAvailableTicketsPercent = async () => {
-        const verifiedRegistrants = await axios.get('https://ownly.market/api/amac-verified-registrants-count')
-        const count = verifiedRegistrants.data.count
-        const availableTickets = state.maxTickets - count
-
-        _setState("availableTickets", availableTickets)
-        _setState("percentageAvailable", (availableTickets / state.maxTickets) * 100)
-
-        if (count === state.maxTickets) _setState("isSoldOut", true)
-    }
-
     const availableTickets = async () => {
-        const verifiedRegistrants = await axios.get('https://ownly.market/api/amac-verified-registrants-count')
-        const count = verifiedRegistrants.data.count
+        _setState("isLoading", true)
+        axios.get('https://ownly.market/api/amac-verified-registrants-count')
+            .then(res => {
+                _setState("isLoading", false)
 
-        if (count === state.maxTickets) {
-            _setState("result", false)
-            _setState("resultMsg", "Sorry. The tickets for the art talks are now SOLD OUT, but you may still join us at the event venue for other activities.")
-            _setState("isSubmitting", false)
-            handleShowResult()
-        } else {
-            handleShowRegister()
-        }
+                if (res.status === 200) {
+                    const count = res.data.count
+
+                    if (count === state.maxTickets) {
+                        _setState("isSoldOut", true)
+                        _setState("result", false)
+                        _setState("resultMsg", "Sorry. The tickets for the art talks are now SOLD OUT, but you may still join us at the event venue for other activities.")
+                        _setState("isSubmitting", false)
+                        handleShowResult()
+                    } else {
+                        handleShowRegister()
+                    }
+                } else {
+                    _setState("result", false)
+                    _setState("resultMsg", "Network connection error. Please try again.")
+                    _setState("isSubmitting", false)
+                    handleShowResult()
+                }
+            })
+            .catch(error => {
+                _setState("result", false)
+                _setState("resultMsg", error.message)
+                _setState("isSubmitting", false)
+                handleShowResult()
+            })
     }
 
     const submitForm = e => {
@@ -112,22 +119,18 @@ function App() {
             })
     }
 
-    useEffect(() => {
-        computeAvailableTicketsPercent()
-    }, [])
-
     return (
         <>
             <Router basename={process.env.PUBLIC_URL}>
-                <Navbar showRegister={availableTickets} />
+                <Navbar isLoading={state.isLoading} showRegister={availableTickets} />
                 <Switch>
                     <Route exact path="/">
-                        <Banner showRegister={availableTickets} />
+                        <Banner isLoading={state.isLoading} showRegister={availableTickets} />
                         <About />
                         <PastAMAC />
                         <Events />
                         <Speakers />
-                        <ApplyTicket state={state} showRegister={availableTickets} />
+                        <ApplyTicket isLoading={state.isLoading} isSoldOut={state.isSoldOut} showRegister={availableTickets} />
                         <ApplyMerchant />
                         <Sponsors />
                         <ApplySponsor />

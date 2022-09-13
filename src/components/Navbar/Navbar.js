@@ -2,11 +2,13 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { bubble as Menu } from "react-burger-menu"
 import { HashLink } from "react-router-hash-link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css'
 
 import logo from '../../img/amac-logo-1.png'
 
-export default function Navbar({ showRegister }) {
+export default function Navbar({ isLoading, showRegister }) {
     const [menuOpenState, setMenuOpenState] = useState(false)
 
     const scrollWithOffset = (el) => {
@@ -108,9 +110,15 @@ export default function Navbar({ showRegister }) {
                             <HashLink className="text-color-6 font-size-120" smooth to="/#faq" scroll={el => scrollWithOffset(el)}>FAQ</HashLink>
                         </li>
                         <li className="main-nav">
-                            <button onClick={showRegister} type="button" className="btn amac-nav-btn btn-custom-2 px-4">
-                                BUY TICKETS
-                            </button>
+                            { isLoading ? (
+                                <button className="btn amac-nav-btn btn-custom-2 px-4" disabled>
+                                    <FontAwesomeIcon icon={faSpinner} spin />
+                                </button>
+                            ) : (
+                                <button onClick={showRegister} type="button" className="btn amac-nav-btn btn-custom-2 px-4">
+                                    BUY TICKETS
+                                </button>
+                            )}
                         </li>
                     </ul>
                 </div>

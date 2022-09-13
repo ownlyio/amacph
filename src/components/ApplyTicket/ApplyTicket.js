@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGifts, faUsers, faTicketAlt, faCertificate } from '@fortawesome/free-solid-svg-icons';
+import { faGifts, faUsers, faTicketAlt, faCertificate, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import './ApplyTicket.css'
 
 import shirt from '../../img/tshirt.png'
 import rascal from '../../img/rascal.png'
 
-export default function ApplyTicket({ state, showRegister }) {
+export default function ApplyTicket({ isLoading, isSoldOut, showRegister }) {
     return (
         <section id="tickets">
             <div className="container">
@@ -77,17 +77,14 @@ export default function ApplyTicket({ state, showRegister }) {
                             <p className="text-center font-size-150 font-size-sm-170 font-size-md-210 font-size-lg-300 text-color-4 arvo-bold ticket-price mb-2">ART TALK PASS</p>
                             <p className="text-center font-size-100 font-size-md-110 font-size-lg-120 text-white ticket-det line-height-150 mb-5">Each ticket includes an AMAC2022 X Lei Melendres shirt plus a FREE MINT slot of Mustachio RASCALS NFT</p>
 
-                            {/*<p className="text-center font-size-sm-100 font-size-lg-120 text-white ticket-available mb-3">Available Tickets</p>*/}
-                            {/*/!* Range *!/*/}
-                            {/*<div className="ticket-range-wrap">*/}
-                            {/*    <div className="ticket-range-outer">*/}
-                            {/*        <div className="ticket-range-inner" style={{ "width": `${state.percentageAvailable}%` }}></div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-                            {/*<p className="text-center font-size-100 font-size-lg-120 text-white ticket-available-qty mb-5">{state.availableTickets}/{state.maxTickets}</p>*/}
-
                             <div className="text-center pt-3">
-                                <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={state.isSoldOut}>{state.isSoldOut ? "SOLD OUT" : "BUY NOW!"}</button>
+                                { isLoading ? (
+                                    <button className="def btn btn-custom-4 px-5 ticket-btn" disabled>
+                                        <FontAwesomeIcon icon={faSpinner} spin />
+                                    </button>
+                                ) : (
+                                    <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={isSoldOut}>{isSoldOut ? "SOLD OUT" : "BUY NOW!"}</button>
+                                )}
                             </div>
                         </div>
                     </div>

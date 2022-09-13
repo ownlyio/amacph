@@ -1,4 +1,6 @@
 import './Banner.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import banner from '../../img/banner.jpg'
 import logo from '../../img/amac-logo-2.png'
@@ -6,7 +8,7 @@ import ownly from '../../img/sponsors/ownly.png'
 import ayala from '../../img/sponsors/ayala-malls-legazpi.webp'
 import bitpinas from '../../img/sponsors/bitpinas.png'
 
-export default function Banner({ showRegister }) {
+export default function Banner({ isLoading, showRegister }) {
     return (
         <section id="amac-banner" className="h-screen background-image-cover position-relative" style={{"backgroundImage": `url(${banner})`}}>
             <div className="container h-100 pt-4">
@@ -18,7 +20,13 @@ export default function Banner({ showRegister }) {
                     </div>
                     <p className="font-size-110 font-size-sm-140 font-size-md-180 font-size-lg-250 arvo-bold text-center text-color-1 banner-title">Exploring the intersection of art and technology</p>
                     <p className="font-size-90 font-size-sm-110 font-size-md-140 font-size-lg-160 neo-bold text-center text-white banner-sub">October 8-9, 2022 | Ayala Malls Legazpi</p>
-                    <button onClick={showRegister} className="def btn btn-custom-1 px-5 mb-3 banner-btn">BUY TICKETS</button>
+                    { isLoading ? (
+                        <button className="def btn btn-custom-4 px-5 mb-3 banner-btn" disabled>
+                            <FontAwesomeIcon icon={faSpinner} spin />
+                        </button>
+                    ) : (
+                        <button onClick={showRegister} className="def btn btn-custom-1 px-5 mb-3 banner-btn">BUY TICKETS</button>
+                    )}
                     <p className="font-size-80 font-size-md-100 neo-regular-italic text-center text-white mb-0 banner-text">Note: Only the Art Talks is ticketed, all activities is open and free for the community</p>
                 </div>
 
