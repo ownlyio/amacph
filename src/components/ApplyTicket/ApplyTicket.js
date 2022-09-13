@@ -11,7 +11,7 @@ export default function ApplyTicket({ state, showRegister }) {
             <div className="container">
                 <div className="row justify-content-center align-items-center">
                     <div className="col-12 mb-5 mb-md-0">
-                        <p className="text-center w-100 font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-white arvo-bold ticket-title mb-1">BUY TICKETS</p>
+                        <p className="text-center w-100 font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-white arvo-bold ticket-title mb-1">ATTEND EXCLUSIVE ART TALKS</p>
                         <p className="text-center w-100 font-size-90 font-size-md-100 font-size-lg-140 text-white arvo-bold ticket-title mb-5">TICKET INCLUSIONS:</p>
                     </div>
 
@@ -45,7 +45,7 @@ export default function ApplyTicket({ state, showRegister }) {
                                     <FontAwesomeIcon className="inclusion-icon" icon={faTicketAlt} color="white" size="4x" />
                                 </div>
                                 <p className="text-center font-size-100 font-size-sm-110 font-size-lg-140 text-white inclusion-desc mb-2">Event Admission</p>
-                                <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white neo-regular-italic inclusion-desc-sub mb-0">4 speakers sharing their art journey filled-with inspiration and learnings</p>
+                                <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white neo-regular-italic inclusion-desc-sub mb-0">4 speakers sharing their art journeys filled with inspiration and realizations</p>
                             </div>
                             <div className="ticket-inclusion-item p-3 mb-2">
                                 <div className="text-center mb-3">
@@ -75,7 +75,7 @@ export default function ApplyTicket({ state, showRegister }) {
                         <div className="ticket-wrap">
                             <p className="text-center font-size-270 font-size-md-310 font-size-lg-400 text-white arvo-bold ticket-price mb-2">₱599</p>
                             <p className="text-center font-size-150 font-size-sm-170 font-size-md-210 font-size-lg-300 text-color-4 arvo-bold ticket-price mb-2">ART TALK PASS</p>
-                            <p className="text-center font-size-100 font-size-md-110 font-size-lg-120 text-white ticket-det line-height-150 mb-5">Each ticket includes an AMAC2022 X Lei Melendres shirt plus a FREE MINT slot of Mustachio RASCALS NFT</p>
+                            <p className="text-center font-size-100 font-size-md-110 font-size-lg-120 text-white ticket-det line-height-150 mb-5">Each ticket includes an AMAC2022 X Lei Melendres shirt, a FREE Mint Slot for Mustachio Rascals NFT, and an EXCLUSIVE pass to our Art Talks Session.</p>
 
                             {/*<p className="text-center font-size-sm-100 font-size-lg-120 text-white ticket-available mb-3">Available Tickets</p>*/}
                             {/*/!* Range *!/*/}
@@ -87,7 +87,7 @@ export default function ApplyTicket({ state, showRegister }) {
                             {/*<p className="text-center font-size-100 font-size-lg-120 text-white ticket-available-qty mb-5">{state.availableTickets}/{state.maxTickets}</p>*/}
 
                             <div className="text-center pt-3">
-                                <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={state.isSoldOut}>{state.isSoldOut ? "SOLD OUT" : "BUY NOW!"}</button>
+                                <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={state.isSoldOut}>{state.isSoldOut ? "SOLD OUT" : "SECURE YOUR PASS"}</button>
                             </div>
                         </div>
                     </div>
