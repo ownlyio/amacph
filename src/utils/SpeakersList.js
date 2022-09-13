@@ -111,7 +111,7 @@ const speakers = [
         organization: "Titik Poetry",
         backgroundImage: artJohn,
         profilePhoto: john,
-        excerpt: "John founded Titik Poetry, a Non-Government Organization Cavite-based art collective, that aims to make art a platform for education.",
+        excerpt: "Verlin founded Titik Poetry, a Non-Government Organization Cavite-based art collective, that aims to make art a platform for education.",
         description: [
             "John Verlin Santos graduated with a degree in Bachelor of Arts in Journalism from Cavite State University. In 2015, he founded Titik Poetry, a Non-Government Organization Cavite-based art collective, that aims to make art not only a form of entertainment but a platform for education. Titik Poetry is recognized by the Security and Exchange Commission and National Youth Commission. In 2018, he initiated a community service platform called Project Sigya. He is also the owner of Titik Productions that started in 2019. In 2022, he gave birth to an artist program called Titik Academy.",
             "In 2021, Verlin Santos ventured into NFTs and created a huge impact in pioneering spoken word and advocating cultural works in Web3. He is one of the community builders in Tezos blockchain in the Philippines among others. Some of his notable achievements in the Metaverse is when he created the first NFT Filipino spoken word album and EP that is minted in Objktcom and Foundation, respectively.",

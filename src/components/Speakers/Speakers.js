@@ -140,7 +140,7 @@ export default function Speakers() {
                                 <p className="text-start font-size-100 font-size-md-110 font-size-lg-120 text-color-6 arvo-bold speaker-name mb-1">John Verlin Santos</p>
                                 <p className="text-start font-size-90 font-size-md-110 font-size-lg-120 text-color-5 neo-regular-italic speaker-job mb-3">Spoken Word Artist</p>
 
-                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 neo-regular-italic speaker-desc">John founded Titik Poetry, a Non-Government Organization Cavite-based art collective, that aims to make art a platform for education.</p>
+                                <p className="text-start font-size-80 font-size-md-90 font-size-lg-110 text-color-5 neo-regular-italic speaker-desc">Verlin founded Titik Poetry, a Non-Government Organization Cavite-based art collective, that aims to make art a platform for education.</p>
                                 <div className="text-center">
                                     <button onClick={() => handleShowSpeakerProfile(speakers[3])} type="button" className="btn speaker-btn mb-3">READ MORE</button>
                                 </div>
