@@ -139,9 +139,15 @@ export default function Navbar({ isLoading, showRegister }) {
                         <HashLink smooth to="/#apply-sponsor" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">BECOME A SPONSOR</HashLink>
                         <HashLink smooth to="/#partners" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">PARTNERS</HashLink>
                         <HashLink smooth to="/#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
-                        <button onClick={showRegister} type="button" className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-180 w-100">
-                            BUY TICKETS
-                        </button>
+                        { isLoading ? (
+                            <button className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-180 w-100" disabled>
+                                <FontAwesomeIcon icon={faSpinner} spin />
+                            </button>
+                        ) : (
+                            <button onClick={showRegister} type="button" className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-180 w-100">
+                                BUY TICKETS
+                            </button>
+                        )}
                     </Menu>
                 </div>
             </div>

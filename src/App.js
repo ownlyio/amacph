@@ -134,7 +134,7 @@ function App() {
                         <ApplyMerchant />
                         <Sponsors />
                         <ApplySponsor />
-                        <FAQ />
+                        <FAQ showRegister={availableTickets} />
                     </Route>
                     <Route exact path="/event-details">
                         <EventDetails state={state} showRegister={availableTickets} />

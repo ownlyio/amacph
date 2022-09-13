@@ -35,7 +35,7 @@ export default function RegisterModal({ registerModal, closeRegister, isSubmitti
                                         </div>
                                         <div className="ps-1">
                                             <label className="form-check-label font-size-80 text-color-6" htmlFor="agreement">
-                                                By checking this box, you are agreeing to our terms and conditions and you understand that the tickets are non-refundable (you can check our FAQ section for more details).
+                                                By checking this box, you are agreeing to our terms and conditions and you understand that the tickets are non-refundable. Please check our FAQs section for more details.
                                             </label>
                                         </div>
                                     </div>

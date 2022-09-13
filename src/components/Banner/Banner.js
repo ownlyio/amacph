@@ -27,7 +27,7 @@ export default function Banner({ isLoading, showRegister }) {
                     ) : (
                         <button onClick={showRegister} className="def btn btn-custom-1 px-5 mb-3 banner-btn">BUY TICKETS</button>
                     )}
-                    <p className="font-size-80 font-size-md-100 neo-regular-italic text-center text-white mb-0 banner-text">Note: Only the Art Talks is ticketed, all activities is open and free for the community</p>
+                    <p className="font-size-80 font-size-md-100 neo-regular-italic text-center text-white mb-0 banner-text">Note: Only the Art Talks are ticketed. Other activities are open and free for everyone in the community.</p>
                 </div>
 
                 <div className="banner-sponsors mt-4 px-5 d-flex justify-content-center justify-content-lg-between align-items-start flex-wrap w-100">
