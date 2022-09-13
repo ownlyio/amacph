@@ -118,6 +118,10 @@
     .banner-sponsor-2-img-wrap {
         width: 150px !important;
     }
+
+    .tpt-logo {
+        width: 120px !important;
+    }
 }
 
 @media (max-width: 576px) {
