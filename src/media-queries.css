@@ -137,7 +137,8 @@
         margin-top: 1em !important;
     }
 
-    .sponsor-item {
+    .sponsor-item,
+    .sponsor-item-sm {
         width: 200px !important;
     }
 
@@ -201,7 +202,8 @@
         width: 50% !important;
     }
 
-    .sponsor-item {
+    .sponsor-item,
+    .sponsor-item-sm {
         width: 170px !important;
     }
 
