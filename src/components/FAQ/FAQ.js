@@ -2,8 +2,8 @@ import './FAQ.css'
 import { useState } from "react"
 import shirt from "../../img/tshirt.png";
 import rascal from "../../img/rascal.png";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCertificate, faGifts, faTicketAlt, faUsers} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCertificate, faGifts, faTicketAlt, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 export default function FAQ({ showRegister }) {
     return (
@@ -99,15 +99,6 @@ export default function FAQ({ showRegister }) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="tickets">
-                <div className="container">
-                    <div className="text-center py-2 px-md-5">
-                        <p className="font-size-170 font-size-lg-200 fw-bold neo-regular text-white px-md-5 line-height-140 mb-5">Celebrate creativity with us on October 8-9, 2022 at Ayala Malls Legazpi for the most-awaited continuation of the Albay Multimedia Arts Convention legacy.</p>
-                        <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn">SIGN UP TODAY</button>
                     </div>
                 </div>
             </section>
