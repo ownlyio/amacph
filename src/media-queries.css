@@ -138,7 +138,8 @@
     }
 
     .sponsor-item,
-    .sponsor-item-sm {
+    .sponsor-item-sm,
+    .sponsor-item-md {
         width: 200px !important;
     }
 
@@ -203,7 +204,8 @@
     }
 
     .sponsor-item,
-    .sponsor-item-sm {
+    .sponsor-item-sm,
+    .sponsor-item-md {
         width: 170px !important;
     }
 
