@@ -7,6 +7,10 @@
     width: 300px;
 }
 
+.sponsor-item.gold {
+    width: 350px;
+}
+
 .sponsor-item-sm {
     width: 150px;
 }
