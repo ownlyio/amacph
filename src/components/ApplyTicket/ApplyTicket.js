@@ -3,7 +3,7 @@ import { faGifts, faUsers, faTicketAlt, faCertificate, faSpinner } from '@fortaw
 import './ApplyTicket.css'
 
 import shirt from '../../img/tshirt.png'
-import rascal from '../../img/rascal.png'
+import rascal from '../../img/rascal2.png'
 
 export default function ApplyTicket({ isLoading, isSoldOut, showRegister }) {
     return (
