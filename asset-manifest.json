@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.8c0e5b7c.chunk.css",
-    "main.js": "/static/js/main.63da5b10.chunk.js",
-    "main.js.map": "/static/js/main.63da5b10.chunk.js.map",
+    "main.js": "/static/js/main.44ff297b.chunk.js",
+    "main.js.map": "/static/js/main.44ff297b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.671f5f54.js",
     "runtime-main.js.map": "/static/js/runtime-main.671f5f54.js.map",
     "static/css/2.4be38407.chunk.css": "/static/css/2.4be38407.chunk.css",
-    "static/js/2.d4595374.chunk.js": "/static/js/2.d4595374.chunk.js",
-    "static/js/2.d4595374.chunk.js.map": "/static/js/2.d4595374.chunk.js.map",
+    "static/js/2.16c23664.chunk.js": "/static/js/2.16c23664.chunk.js",
+    "static/js/2.16c23664.chunk.js.map": "/static/js/2.16c23664.chunk.js.map",
     "static/js/3.ebc0d4a9.chunk.js": "/static/js/3.ebc0d4a9.chunk.js",
     "static/js/3.ebc0d4a9.chunk.js.map": "/static/js/3.ebc0d4a9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4be38407.chunk.css.map": "/static/css/2.4be38407.chunk.css.map",
     "static/css/main.8c0e5b7c.chunk.css.map": "/static/css/main.8c0e5b7c.chunk.css.map",
-    "static/js/2.d4595374.chunk.js.LICENSE.txt": "/static/js/2.d4595374.chunk.js.LICENSE.txt",
+    "static/js/2.16c23664.chunk.js.LICENSE.txt": "/static/js/2.16c23664.chunk.js.LICENSE.txt",
     "static/media/1.3fcbd71f.jpg": "/static/media/1.3fcbd71f.jpg",
     "static/media/1.4d908a2d.png": "/static/media/1.4d908a2d.png",
     "static/media/1.78e87df0.jpg": "/static/media/1.78e87df0.jpg",
@@ -63,6 +63,7 @@
     "static/media/lei_melendres.2a8b4795.png": "/static/media/lei_melendres.2a8b4795.png",
     "static/media/merchant-pic.e5c0bc73.jpg": "/static/media/merchant-pic.e5c0bc73.jpg",
     "static/media/merchant.73d79a05.jpg": "/static/media/merchant.73d79a05.jpg",
+    "static/media/mgg.3d389822.png": "/static/media/mgg.3d389822.png",
     "static/media/music_jam.3be4400a.jpg": "/static/media/music_jam.3be4400a.jpg",
     "static/media/music_jam1.8e7ec03d.jpg": "/static/media/music_jam1.8e7ec03d.jpg",
     "static/media/ownly.24134ca8.png": "/static/media/ownly.24134ca8.png",
@@ -71,19 +72,22 @@
     "static/media/placewar.82a492f7.png": "/static/media/placewar.82a492f7.png",
     "static/media/rascal.03ff1526.png": "/static/media/rascal.03ff1526.png",
     "static/media/rascal2.13e0d40a.png": "/static/media/rascal2.13e0d40a.png",
+    "static/media/ruyag.da689fe4.png": "/static/media/ruyag.da689fe4.png",
     "static/media/sparkpoint.3da41f7d.png": "/static/media/sparkpoint.3da41f7d.png",
     "static/media/speaker_bg.d19d1667.png": "/static/media/speaker_bg.d19d1667.png",
     "static/media/sponsor-pic.a8d3d738.jpg": "/static/media/sponsor-pic.a8d3d738.jpg",
     "static/media/sponsor.068e65d4.jpg": "/static/media/sponsor.068e65d4.jpg",
+    "static/media/tabuskco.2f1b7403.png": "/static/media/tabuskco.2f1b7403.png",
     "static/media/tpt-black.0a9bc3a7.png": "/static/media/tpt-black.0a9bc3a7.png",
     "static/media/tpt.c0e8e817.png": "/static/media/tpt.c0e8e817.png",
-    "static/media/tshirt.ffd51600.png": "/static/media/tshirt.ffd51600.png"
+    "static/media/tshirt.ffd51600.png": "/static/media/tshirt.ffd51600.png",
+    "static/media/wacom.c3b74165.png": "/static/media/wacom.c3b74165.png"
   },
   "entrypoints": [
     "static/js/runtime-main.671f5f54.js",
     "static/css/2.4be38407.chunk.css",
-    "static/js/2.d4595374.chunk.js",
+    "static/js/2.16c23664.chunk.js",
     "static/css/main.8c0e5b7c.chunk.css",
-    "static/js/main.63da5b10.chunk.js"
+    "static/js/main.44ff297b.chunk.js"
   ]
 }
