@@ -8,8 +8,12 @@ import commPartner1 from '../../img/sponsors/crypto-art-ph.png'
 import commPartner2 from '../../img/sponsors/tpt-black.png'
 import commPartner3 from '../../img/sponsors/cotm.png'
 import commPartner4 from '../../img/sponsors/dawani.png'
+import commPartner5 from '../../img/sponsors/tabuskco.png'
+import commPartner6 from '../../img/sponsors/ruyag.png'
 import goldSponsor1 from '../../img/sponsors/coinex.png'
 import goldSponsor2 from '../../img/sponsors/sparkpoint.png'
+import goldSponsor3 from '../../img/sponsors/mgg.png'
+import silverSponsor1 from '../../img/sponsors/wacom.png'
 import bronzeSponsor1 from '../../img/sponsors/placewar.png'
 
 export default function Sponsors() {
@@ -29,6 +33,21 @@ export default function Sponsors() {
                                 </div>
                                 <div className="sponsor-item gold my-3 my-md-0 mx-md-3">
                                     <img src={goldSponsor2} alt="Sponsor Logo" className="w-100" />
+                                </div>
+                                <div className="sponsor-item gold my-3 my-md-0 mx-md-3">
+                                    <img src={goldSponsor3} alt="Sponsor Logo" className="w-100" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Silver Sponsors */}
+                    <div className="sponsors-section">
+                        <p className="text-center font-size-100 font-size-lg-140 text-color-5 arvo-italic sponsor-title mb-sm-4 mb-md-1">Silver Sponsor</p>
+                        <div className="sponsors-wrap">
+                            <div className="sponsors-row d-flex justify-content-evenly align-items-center my-md-3 my-lg-5 flex-wrap">
+                                <div className="sponsor-item my-3 my-md-0 mx-md-3">
+                                    <img src={silverSponsor1} alt="Sponsor Logo" className="w-100" />
                                 </div>
                             </div>
                         </div>
@@ -64,6 +83,12 @@ export default function Sponsors() {
                                         </div>
                                         <div className="sponsor-item-sm my-3 my-md-0 mx-lg-4 mx-xxl-5">
                                             <img src={commPartner4} alt="Sponsor Logo" className="w-100" />
+                                        </div>
+                                        <div className="sponsor-item-sm my-3 my-md-0 mx-lg-4 mx-xxl-5">
+                                            <img src={commPartner5} alt="Sponsor Logo" className="w-100" />
+                                        </div>
+                                        <div className="sponsor-item-sm my-3 my-md-0 mx-lg-4 mx-xxl-5">
+                                            <img src={commPartner6} alt="Sponsor Logo" className="w-100" />
                                         </div>
                                     </div>
                                 </div>
