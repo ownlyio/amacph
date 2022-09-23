@@ -3,7 +3,7 @@ import { faGifts, faUsers, faTicketAlt, faCertificate, faSpinner } from '@fortaw
 import './ApplyTicket.css'
 
 import shirt from '../../img/tshirt.png'
-import rascal from '../../img/rascal.png'
+import rascal from '../../img/rascal2.png'
 
 export default function ApplyTicket({ isLoading, isSoldOut, showRegister }) {
     return (
@@ -83,7 +83,7 @@ export default function ApplyTicket({ isLoading, isSoldOut, showRegister }) {
                                         <FontAwesomeIcon icon={faSpinner} spin />
                                     </button>
                                 ) : (
-                                    <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={isSoldOut}>{isSoldOut ? "SOLD OUT" : "BUY NOW!"}</button>
+                                    <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={isSoldOut}>{isSoldOut ? "SOLD OUT" : "SECURE YOUR PASS"}</button>
                                 )}
                             </div>
                         </div>
