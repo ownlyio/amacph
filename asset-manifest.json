@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8c0e5b7c.chunk.css",
-    "main.js": "/static/js/main.f9c8c460.chunk.js",
-    "main.js.map": "/static/js/main.f9c8c460.chunk.js.map",
+    "main.js": "/static/js/main.775138e3.chunk.js",
+    "main.js.map": "/static/js/main.775138e3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.671f5f54.js",
     "runtime-main.js.map": "/static/js/runtime-main.671f5f54.js.map",
     "static/css/2.4be38407.chunk.css": "/static/css/2.4be38407.chunk.css",
@@ -52,7 +52,7 @@
     "static/media/ayala-malls-legazpi.66e450a9.webp": "/static/media/ayala-malls-legazpi.66e450a9.webp",
     "static/media/banner.4ae4895b.jpg": "/static/media/banner.4ae4895b.jpg",
     "static/media/bitpinas.b715724f.png": "/static/media/bitpinas.b715724f.png",
-    "static/media/blockchain-space.43502c13.jpg": "/static/media/blockchain-space.43502c13.jpg",
+    "static/media/blockchainspace.14a580fd.png": "/static/media/blockchainspace.14a580fd.png",
     "static/media/blocktides.a3c14eeb.jpg": "/static/media/blocktides.a3c14eeb.jpg",
     "static/media/coinex.be5c5b94.png": "/static/media/coinex.be5c5b94.png",
     "static/media/coloring.e52f70e7.jpg": "/static/media/coloring.e52f70e7.jpg",
@@ -90,6 +90,6 @@
     "static/css/2.4be38407.chunk.css",
     "static/js/2.d4595374.chunk.js",
     "static/css/main.8c0e5b7c.chunk.css",
-    "static/js/main.f9c8c460.chunk.js"
+    "static/js/main.775138e3.chunk.js"
   ]
 }
