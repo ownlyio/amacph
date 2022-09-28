@@ -10,6 +10,7 @@ import commPartner3 from '../../img/sponsors/cotm.png'
 import commPartner4 from '../../img/sponsors/dawani.png'
 import commPartner5 from '../../img/sponsors/tabuskco.png'
 import commPartner6 from '../../img/sponsors/ruyag.png'
+import commPartner7 from '../../img/sponsors/mustachios.png'
 import goldSponsor1 from '../../img/sponsors/coinex.png'
 import goldSponsor2 from '../../img/sponsors/sparkpoint.png'
 import goldSponsor3 from '../../img/sponsors/mgg.png'
@@ -107,6 +108,9 @@ export default function Sponsors() {
                                         </div>
                                         <div className="col-4 col-md-5 col-lg-3 my-3 my-md-0">
                                             <img src={commPartner6} alt="Sponsor Logo" className="w-100" />
+                                        </div>
+                                        <div className="col-4 col-md-5 col-lg-3 my-3 my-md-0">
+                                            <img src={commPartner7} alt="Sponsor Logo" className="w-100" />
                                         </div>
                                     </div>
                                 </div>
