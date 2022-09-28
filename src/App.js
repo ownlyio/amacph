@@ -11,6 +11,7 @@ import PastAMAC from './components/PastAMAC/PastAMAC'
 import Events from './components/Events/Events'
 import Speakers from './components/Speakers/Speakers'
 import ApplyTicket from './components/ApplyTicket/ApplyTicket'
+import Exhibit from './components/Exhibit/Exhibit'
 import ApplyMerchant from './components/ApplyMerchant/ApplyMerchant'
 import Sponsors from './components/Sponsors/Sponsors'
 import ApplySponsor from './components/ApplySponsor/ApplySponsor'
@@ -131,6 +132,7 @@ function App() {
                         <Events />
                         <Speakers />
                         <ApplyTicket isLoading={state.isLoading} isSoldOut={state.isSoldOut} showRegister={availableTickets} />
+                        <Exhibit />
                         <ApplyMerchant />
                         <Sponsors />
                         <ApplySponsor />

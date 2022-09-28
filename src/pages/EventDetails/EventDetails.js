@@ -1,7 +1,7 @@
 import './EventDetails.css'
 
 // images
-import artExhibit from '../../img/events/art_exhibit1.jpg'
+import artExhibit from '../../img/events/exhibit1.jpg'
 import artFair from '../../img/events/art_fair1.jpg'
 import artTalks from '../../img/events/art_talks1.jpg'
 import coloring from '../../img/events/coloring1.jpg'
@@ -91,8 +91,8 @@ export default function EventDetails({ state, showRegister }) {
                     <div className="row flex-column justify-content-between h-100">
                         <p className="text-center text-md-start font-size-180 font-size-md-250 font-size-lg-320 text-white arvo-bold schedule-title mb-2">ART EXHIBITION</p>
                         <div className="text-center text-md-start">
-                            {/* <a href="#" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">REGISTRATION TBA</a> */}
-                            <button type="button" className="def btn btn-custom-2 px-5">REGISTRATION TBA</button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuODWOg7Wyb2TfIScXz5e1SpXyN6hndei--8mK1bT3KMq59g/viewform" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">PRE-REGISTER</a>
+                            {/* <button type="button" className="def btn btn-custom-2 px-5">REGISTRATION TBA</button> */}
                         </div>
                     </div>
                 </div>

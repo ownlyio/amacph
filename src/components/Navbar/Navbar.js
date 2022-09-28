@@ -98,7 +98,7 @@ export default function Navbar({ isLoading, showRegister }) {
                             <ul className="dropdown-menu">
                                 <li className="sub-nav my-2"><HashLink className="text-color-6 font-size-110 amac-drop" smooth to="/#apply-merchant" scroll={el => scrollWithOffset(el)}>Become a Merchant</HashLink></li>
                                 <li className="sub-nav my-2"><HashLink className="text-color-6 font-size-110 amac-drop" smooth to="/#apply-sponsor" scroll={el => scrollWithOffset(el)}>Become a Sponsor</HashLink></li>
-                                <li className="sub-nav my-2"><a className="text-color-6 font-size-110 amac-drop" href="https://docs.google.com/forms/d/e/1FAIpQLSeuODWOg7Wyb2TfIScXz5e1SpXyN6hndei--8mK1bT3KMq59g/viewform" target="_blank" rel="noreferrer">Open Call for Artists</a></li>
+                                <li className="sub-nav my-2"><HashLink className="text-color-6 font-size-110 amac-drop" smooth to="/#exhibition" scroll={el => scrollWithOffset(el)}>Open Call for Artists</HashLink></li>
                             </ul>
                         </li>
                         <li className="main-nav">
@@ -138,7 +138,7 @@ export default function Navbar({ isLoading, showRegister }) {
                         <HashLink smooth to="/#tickets" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">TICKETS</HashLink>
                         <HashLink smooth to="/#apply-merchant" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">BECOME A MERCHANT</HashLink>
                         <HashLink smooth to="/#apply-sponsor" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">BECOME A SPONSOR</HashLink>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuODWOg7Wyb2TfIScXz5e1SpXyN6hndei--8mK1bT3KMq59g/viewform" target="_blank" rel="noreferrer" onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">OPEN CALL FOR ARTISTS</a>
+                        <HashLink smooth to="/#exhibition" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">OPEN CALL FOR ARTISTS</HashLink>
                         <HashLink smooth to="/#partners" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">PARTNERS</HashLink>
                         <HashLink smooth to="/#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
                         { isLoading ? (

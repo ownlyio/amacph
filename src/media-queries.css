@@ -122,6 +122,10 @@
     .tpt-logo {
         width: 120px !important;
     }
+
+    .exhibit-sub {
+        width: 80% !important;
+    }
 }
 
 @media (max-width: 576px) {

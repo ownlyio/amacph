@@ -1,7 +1,7 @@
 import './Events.css'
 
 // images
-import artExhibit from '../../img/events/art_exhibit.jpg'
+import artExhibit from '../../img/events/exhibit.jpg'
 import artFair from '../../img/events/art_fair.jpg'
 import artTalks from '../../img/events/art_talks.jpg'
 import coloring from '../../img/events/coloring.jpg'
