@@ -48,7 +48,7 @@ export default function EventDetails({ state, showRegister }) {
                     <div className="row flex-column justify-content-between h-100">
                         <p className="text-center text-md-start font-size-180 font-size-md-250 font-size-lg-320 text-white arvo-bold schedule-title mb-2">ART FAIR</p>
                         <div className="text-center text-md-start">
-                            <a href="https://forms.gle/RuBfnskRRLHSy3Zw7" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">APPLY AS MERCHANT</a>
+                            <button className="def btn btn-custom-2 px-5" disabled={true}>APPLICATION CLOSED</button>
                         </div>
                     </div>
                 </div>
@@ -91,8 +91,8 @@ export default function EventDetails({ state, showRegister }) {
                     <div className="row flex-column justify-content-between h-100">
                         <p className="text-center text-md-start font-size-180 font-size-md-250 font-size-lg-320 text-white arvo-bold schedule-title mb-2">ART EXHIBITION</p>
                         <div className="text-center text-md-start">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuODWOg7Wyb2TfIScXz5e1SpXyN6hndei--8mK1bT3KMq59g/viewform" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">PRE-REGISTER</a>
-                            {/* <button type="button" className="def btn btn-custom-2 px-5">REGISTRATION TBA</button> */}
+                            {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuODWOg7Wyb2TfIScXz5e1SpXyN6hndei--8mK1bT3KMq59g/viewform" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">PRE-REGISTER</a> */}
+                            <button className="def btn btn-custom-2 px-5" disabled={true}>APPLICATION CLOSED</button>
                         </div>
                     </div>
                 </div>
