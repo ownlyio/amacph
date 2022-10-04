@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d76d0e9d.chunk.css",
-    "main.js": "/static/js/main.6631383f.chunk.js",
-    "main.js.map": "/static/js/main.6631383f.chunk.js.map",
+    "main.css": "/static/css/main.c1a834dd.chunk.css",
+    "main.js": "/static/js/main.527cf362.chunk.js",
+    "main.js.map": "/static/js/main.527cf362.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.75cf90c8.js",
     "runtime-main.js.map": "/static/js/runtime-main.75cf90c8.js.map",
     "static/css/2.4be38407.chunk.css": "/static/css/2.4be38407.chunk.css",
-    "static/js/2.919b248c.chunk.js": "/static/js/2.919b248c.chunk.js",
-    "static/js/2.919b248c.chunk.js.map": "/static/js/2.919b248c.chunk.js.map",
+    "static/js/2.d22f08af.chunk.js": "/static/js/2.d22f08af.chunk.js",
+    "static/js/2.d22f08af.chunk.js.map": "/static/js/2.d22f08af.chunk.js.map",
     "static/js/3.872599ac.chunk.js": "/static/js/3.872599ac.chunk.js",
     "static/js/3.872599ac.chunk.js.map": "/static/js/3.872599ac.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4be38407.chunk.css.map": "/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.d76d0e9d.chunk.css.map": "/static/css/main.d76d0e9d.chunk.css.map",
-    "static/js/2.919b248c.chunk.js.LICENSE.txt": "/static/js/2.919b248c.chunk.js.LICENSE.txt",
+    "static/css/main.c1a834dd.chunk.css.map": "/static/css/main.c1a834dd.chunk.css.map",
+    "static/js/2.d22f08af.chunk.js.LICENSE.txt": "/static/js/2.d22f08af.chunk.js.LICENSE.txt",
     "static/media/1.3fcbd71f.jpg": "/static/media/1.3fcbd71f.jpg",
     "static/media/1.4d908a2d.png": "/static/media/1.4d908a2d.png",
     "static/media/1.78e87df0.jpg": "/static/media/1.78e87df0.jpg",
@@ -83,14 +83,15 @@
     "static/media/tabuskco.2f1b7403.png": "/static/media/tabuskco.2f1b7403.png",
     "static/media/tpt-black.0a9bc3a7.png": "/static/media/tpt-black.0a9bc3a7.png",
     "static/media/tpt.c0e8e817.png": "/static/media/tpt.c0e8e817.png",
+    "static/media/transcendence.4442740b.png": "/static/media/transcendence.4442740b.png",
     "static/media/tshirt.ffd51600.png": "/static/media/tshirt.ffd51600.png",
     "static/media/wacom.c3b74165.png": "/static/media/wacom.c3b74165.png"
   },
   "entrypoints": [
     "static/js/runtime-main.75cf90c8.js",
     "static/css/2.4be38407.chunk.css",
-    "static/js/2.919b248c.chunk.js",
-    "static/css/main.d76d0e9d.chunk.css",
-    "static/js/main.6631383f.chunk.js"
+    "static/js/2.d22f08af.chunk.js",
+    "static/css/main.c1a834dd.chunk.css",
+    "static/js/main.527cf362.chunk.js"
   ]
 }
