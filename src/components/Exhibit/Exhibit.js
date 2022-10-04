@@ -15,7 +15,7 @@ export default function Exhibit() {
                         <button className="def btn btn-custom-2 px-5" disabled={true}>APPLICATION CLOSED</button>
                     </div>
                 </div>
-            </div>
+        </div>
         </section>
     )
 }
