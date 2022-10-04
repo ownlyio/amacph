@@ -80,7 +80,7 @@ export default function ApplyTicket({ isLoading, isSoldOut, showRegister }) {
                                     <FontAwesomeIcon className="inclusion-icon" icon={faPen} color="white" size="4x" />
                                 </div>
                                 <p className="text-center font-size-100 font-size-sm-110 font-size-lg-140 text-white inclusion-desc mb-2">Sandbox Alpha Season 3 Sign Up</p>
-                                <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Get a link to register for Sandbox Alpha and explore the 18 experiences of the Alpha Season 3 content and a chance to reap the rewards!</p>
+                                <p className="text-center font-size-80 font-size-sm-90 font-size-lg-110 text-white arvo-italic inclusion-desc-sub mb-0">Get an exclusive Sign Up for Sandbox Alpha Season 3, the largest showcase of playable experiences from The Sandbox, with almost 100 experiences and new reward mechanics for players!</p>
                             </div>
                         </div>
                     </div>

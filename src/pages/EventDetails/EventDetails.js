@@ -7,6 +7,7 @@ import artTalks from '../../img/events/art_talks1.jpg'
 import coloring from '../../img/events/coloring1.jpg'
 import musicJam from '../../img/events/music_jam1.jpg'
 import photowalk from '../../img/events/photowalk1.jpg'
+import transcendence from '../../img/events/transcendence.png'
 
 import tpt from '../../img/sponsors/tpt.png'
 
@@ -40,6 +41,22 @@ export default function EventDetails({ state, showRegister }) {
                             </ul>
                         </div>
                         <div className="col-12 col-md-2 col-lg-3"></div> 
+                    </div>
+                </div>
+            </section>
+            <section id="transcendence">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-12 col-md-6">
+                            <div className="transcendence-img">
+                                <img src={transcendence} alt="Transcendence" className="w-100" />
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6">
+                            <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-color-3 arvo-bold trans-title mb-4">TRANSCENDENCE</p>
+                            <p className="text-center font-size-100 font-size-sm-120 font-size-lg-140 text-color-5 trans-desc mx-auto neo-italic mb-5">Embracing, exploring, extending thru the digital music age</p>
+                            <p className="text-center font-size-100 font-size-sm-120 font-size-lg-140 text-color-5 trans-desc mx-auto neo-bold mb-5">October 9, 2022 5PM @ Ayala Malls Legazpi</p>
+                        </div>
                     </div>
                 </div>
             </section>

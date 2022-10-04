@@ -19,3 +19,12 @@
 .tpt-logo {
     width: 80px;
 }
+
+#transcendence {
+    padding: 5em 0;
+    background-color: white;
+}
+
+.trans-desc {
+    width: 80%;
+}
