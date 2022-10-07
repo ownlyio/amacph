@@ -72,7 +72,7 @@ export default function Speakers() {
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Oct. 8<br />02:00PM-05:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Side event with SparkLearn @ SparkPoint Office</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">SparkLearn's NFT Talk &amp; Crypto Wallet Setup @ SparkPoint Office</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Oct. 8-9</p>
@@ -84,48 +84,56 @@ export default function Speakers() {
                         <p className="font-size-110 font-size-sm-160 font-size-md-190 font-size-lg-220 arvo-bold text-center text-color-2 mb-4">ART TALKS PROGRAM</p>
                         <div className="schedule-item-wrap">
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">01:00PM onwards</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Prayer</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">12:00PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Registration</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">National Anthem</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">01:15PM-01:20PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Announcement of Upcoming Talks and Speakers</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Opening and Welcome</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">01:20PM-01:30PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Prayer and National Anthem</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">1st Speaker - Verlin Santos</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">01:30PM-01:40PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Opening and Welcome by Ismael Jerusalem</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">CoinEx</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">01:40PM-02:25PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Verlin Santos, Titik Poetry</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">2nd Speaker - Karl Vasquez</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">02:25PM-02:35PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Dell Omasas, CoinEx</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">MGG</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">02:35PM-03:20PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Karl Vasquez, Bounce Back PH</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">3rd Speaker - Jopet Arias</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">03:20PM-03:30PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Mike Reñevo, MetaGaming Guild</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">SparkPoint</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">03:30PM-04:15PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Jopet Arias, CryptoArt PH</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">4th Speaker - Lei Melendres</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">04:15PM-04:25PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Kristine Joy Ibañez, SparkPoint</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular"></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Closing and Raffle (WACOM)</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">04:25PM-05:10PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Lei Melendres</p>
+                            </div>
+                            <div className="schedule-item-list d-flex justify-content-between">
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">05:10PM-05:20PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Blockchain Space/Sandbox</p>
+                            </div>
+                            <div className="schedule-item-list d-flex justify-content-between">
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">05:20PM-05:30PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Closing and Raffle, WACOM</p>
                             </div>
                         </div>
                     </div>
