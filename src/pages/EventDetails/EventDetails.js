@@ -1,3 +1,4 @@
+import Schedule from '../../components/Schedule/Schedule'
 import './EventDetails.css'
 
 // images
@@ -14,36 +15,7 @@ import tpt from '../../img/sponsors/tpt.png'
 export default function EventDetails({ state, showRegister }) {
     return (
         <>
-            <section id="art-schedule">
-                <div className="container">
-                    <div className="schedule-wrap d-flex justify-content-center align-items-center flex-column">
-                        <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-white arvo-bold schedule-title mt-lg-5 mb-2">AMAC 2022 EVENT DETAILS</p>
-                        <p className="font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 neo-bold text-center text-white mb-5 schedule-sub">October 8-9, 2022 | Ayala Malls Legazpi</p>
-                    </div>
-                    <div className="row align-items-start">
-                        <div className="col-12 col-md-2 col-lg-3"></div>
-                        <div className="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
-                            <p className="font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 arvo-bold text-center text-white mb-4">DAY 01</p>
-                            <ul className="schedule-list">
-                                <li className="font-size-100 font-size-sm-120 font-size-lg-140 text-white neo-regular my-2">ART FAIR</li>
-                                <li className="font-size-100 font-size-sm-120 font-size-lg-140 text-white neo-regular my-2">ART EXHIBIT</li>
-                                <li className="font-size-100 font-size-sm-120 font-size-lg-140 text-white neo-regular my-2">PHOTOWALK</li>
-                                <li className="font-size-100 font-size-sm-120 font-size-lg-140 text-white neo-regular my-2">COLORING FOR KIDS</li>
-                            </ul>
-                        </div>
-                        <div className="col-12 col-md-4 col-lg-3">
-                            <p className="font-size-100 font-size-sm-120 font-size-md-150 font-size-lg-180 arvo-bold text-center text-white mb-4">DAY 02</p>
-                            <ul className="schedule-list">
-                                <li className="font-size-100 font-size-sm-120 font-size-lg-140 text-white neo-regular my-2">ART FAIR</li>
-                                <li className="font-size-100 font-size-sm-120 font-size-lg-140 text-white neo-regular my-2">ART EXHIBIT</li>
-                                <li className="font-size-100 font-size-sm-120 font-size-lg-140 text-white neo-regular my-2">ART TALKS</li>
-                                <li className="font-size-100 font-size-sm-120 font-size-lg-140 text-white neo-regular my-2">MUSIC JAM &amp; OPEN MIC</li>
-                            </ul>
-                        </div>
-                        <div className="col-12 col-md-2 col-lg-3"></div> 
-                    </div>
-                </div>
-            </section>
+            <Schedule />
             <section id="transcendence">
                 <div className="container">
                     <div className="row align-items-center">
