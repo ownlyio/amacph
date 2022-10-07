@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1a834dd.chunk.css",
-    "main.js": "/static/js/main.527cf362.chunk.js",
-    "main.js.map": "/static/js/main.527cf362.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.75cf90c8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.75cf90c8.js.map",
+    "main.css": "/static/css/main.df547c84.chunk.css",
+    "main.js": "/static/js/main.65f91710.chunk.js",
+    "main.js.map": "/static/js/main.65f91710.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7c8601b0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7c8601b0.js.map",
     "static/css/2.4be38407.chunk.css": "/static/css/2.4be38407.chunk.css",
-    "static/js/2.d22f08af.chunk.js": "/static/js/2.d22f08af.chunk.js",
-    "static/js/2.d22f08af.chunk.js.map": "/static/js/2.d22f08af.chunk.js.map",
-    "static/js/3.872599ac.chunk.js": "/static/js/3.872599ac.chunk.js",
-    "static/js/3.872599ac.chunk.js.map": "/static/js/3.872599ac.chunk.js.map",
+    "static/js/2.5c4cb601.chunk.js": "/static/js/2.5c4cb601.chunk.js",
+    "static/js/2.5c4cb601.chunk.js.map": "/static/js/2.5c4cb601.chunk.js.map",
+    "static/js/3.caf1f014.chunk.js": "/static/js/3.caf1f014.chunk.js",
+    "static/js/3.caf1f014.chunk.js.map": "/static/js/3.caf1f014.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4be38407.chunk.css.map": "/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.c1a834dd.chunk.css.map": "/static/css/main.c1a834dd.chunk.css.map",
-    "static/js/2.d22f08af.chunk.js.LICENSE.txt": "/static/js/2.d22f08af.chunk.js.LICENSE.txt",
+    "static/css/main.df547c84.chunk.css.map": "/static/css/main.df547c84.chunk.css.map",
+    "static/js/2.5c4cb601.chunk.js.LICENSE.txt": "/static/js/2.5c4cb601.chunk.js.LICENSE.txt",
     "static/media/1.3fcbd71f.jpg": "/static/media/1.3fcbd71f.jpg",
     "static/media/1.4d908a2d.png": "/static/media/1.4d908a2d.png",
     "static/media/1.78e87df0.jpg": "/static/media/1.78e87df0.jpg",
@@ -60,6 +60,7 @@
     "static/media/dawani.28ce2c03.png": "/static/media/dawani.28ce2c03.png",
     "static/media/exhibit.e521df48.jpg": "/static/media/exhibit.e521df48.jpg",
     "static/media/exhibit1.77760130.jpg": "/static/media/exhibit1.77760130.jpg",
+    "static/media/honu.ce73f929.png": "/static/media/honu.ce73f929.png",
     "static/media/jopet_arias.7b9e5a97.jpg": "/static/media/jopet_arias.7b9e5a97.jpg",
     "static/media/lei_melendres.2a8b4795.png": "/static/media/lei_melendres.2a8b4795.png",
     "static/media/merchant-pic.e5c0bc73.jpg": "/static/media/merchant-pic.e5c0bc73.jpg",
@@ -88,10 +89,10 @@
     "static/media/wacom.c3b74165.png": "/static/media/wacom.c3b74165.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.75cf90c8.js",
+    "static/js/runtime-main.7c8601b0.js",
     "static/css/2.4be38407.chunk.css",
-    "static/js/2.d22f08af.chunk.js",
-    "static/css/main.c1a834dd.chunk.css",
-    "static/js/main.527cf362.chunk.js"
+    "static/js/2.5c4cb601.chunk.js",
+    "static/css/main.df547c84.chunk.css",
+    "static/js/main.65f91710.chunk.js"
   ]
 }
