@@ -10,77 +10,73 @@ export default function Speakers() {
                 <p className="text-center font-size-130 font-size-sm-160 font-size-md-200 font-size-lg-280 text-color-4 arvo-bold speaker-title mb-4 mb-lg-5">SCHEDULE OF EVENTS</p>
                 
                 <div className="row align-items-start">
-                    <div className="col-12 col-md-6 mb-4">
+                    <div className="col-12 col-md-6 mb-4 order-1">
                         <p className="font-size-110 font-size-sm-160 font-size-md-190 font-size-lg-220 arvo-bold text-center text-color-2 mb-4">DAY 01 - OCT. 08</p>
                         <div className="schedule-item-wrap">
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">10:00AM-08:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Art Fair</p>
-                            </div>
-                            <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Anytime at <a href="https://mustachio.quest" target="_blank" rel="noreferrer" className="link-color-2">Mustachio Quest Gallery</a></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">AMAC Metaverse Exhibit</p>
-                            </div>
-                            <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">02:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Photowalk - Assembly Time</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Art Fair with local creative merchants</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">01:00PM-07:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Busking</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Busking with TabuskCo</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">06:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Raffle WACOM (AR content)</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">02:00PM-05:00PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Tara Photowalk Tayo with Earl Recamunda</p>
+                            </div>
+                            <div className="schedule-item-list d-flex justify-content-between">
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3"><a href="https://mustachio.quest" target="_blank" rel="noreferrer" className="link-color-2">Mustachio Quest Gallery</a></p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Metaverse Exhibit (visit anytime online)</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 mb-4">
+
+                    <div className="col-12 col-md-6 mb-4 order-2 order-md-3">
                         <p className="font-size-110 font-size-sm-160 font-size-md-190 font-size-lg-220 arvo-bold text-center text-color-2 mb-4">DAY 02 - OCT. 09</p>
                         <div className="schedule-item-wrap">
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">10:00AM-08:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Art Fair</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Art Fair with local creative merchants</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Anytime at <a href="https://mustachio.quest" target="_blank" rel="noreferrer" className="link-color-2">Mustachio Quest Gallery</a></p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">AMAC Metaverse Exhibit</p>
-                            </div>
-                            <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">01:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Art Talks @ Ayala Cinema</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">01:00PM-05:30PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Art Taks at Ayala Malls Cinema<br/>with Lei Melendres, Karl Vasquez, Verlin Santos &amp; Jopet Arias</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">01:00PM-04:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Music Jam Part 1</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Music Jam Part 1 with local music performances</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">05:00PM-08:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Music Jam Part 2</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Music Jam Part 2, Transcendence with Dawani, &amp; COTM</p>
+                            </div>
+                            <div className="schedule-item-list d-flex justify-content-between">
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3"><a href="https://mustachio.quest" target="_blank" rel="noreferrer" className="link-color-2">Mustachio Quest Gallery</a></p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Metaverse Exhibit (visit anytime online)</p>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="row align-items-start">
-                    <div className="col-12 col-md-6 mb-4">
+                    <div className="col-12 col-md-6 mb-4 order-3 order-md-2">
                         <p className="font-size-110 font-size-sm-160 font-size-md-190 font-size-lg-220 arvo-bold text-center text-color-2 mb-4">OFFICIAL SIDE EVENTS</p>
                         <div className="schedule-item-wrap">
                             <div className="schedule-item-list d-flex justify-content-between">
-                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Oct. 7</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">BB Talks (webinar via Zoom)</p>
+                                <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">Oct. 7<br />01:00PM-03:00PM</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular">BB Talks (Webinar via Zoom)</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Oct. 8<br />02:00PM-05:00PM</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">SparkLearn's NFT Talk &amp; Crypto Wallet Setup @ SparkPoint Office</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">SparkLearn (NFT Talk &amp; Crypto Wallet Setup) @ SparkPoint Office</p>
                             </div>
                             <div className="schedule-item-list d-flex justify-content-between">
                                 <p className="schedule-title-a text-end font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Oct. 8-9</p>
-                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Kids Workshop with Dee Jai</p>
+                                <p className="schedule-title-b text-start font-size-90 font-size-sm-100 font-size-md-120 font-size-lg-140 text-color-5 neo-regular mb-3">Kids workshop with Dee Jai Tanji</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 mb-0 mb-md-4">
+
+                    <div className="col-12 col-md-6 mb-0 mb-md-4 order-4">
                         <p className="font-size-110 font-size-sm-160 font-size-md-190 font-size-lg-220 arvo-bold text-center text-color-2 mb-4">ART TALKS PROGRAM</p>
                         <div className="schedule-item-wrap">
                             <div className="schedule-item-list d-flex justify-content-between">
