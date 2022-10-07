@@ -4,6 +4,7 @@ import coPresenter1 from '../../img/sponsors/ownly.png'
 import coPresenter2 from '../../img/sponsors/ayala-malls-legazpi.webp'
 import mediaPartner1 from '../../img/sponsors/bitpinas.png'
 import mediaPartner2 from '../../img/sponsors/blocktides.jpg'
+import mediaPartner3 from '../../img/sponsors/honu.png'
 import commPartner1 from '../../img/sponsors/crypto-art-ph.png'
 import commPartner2 from '../../img/sponsors/tpt-black.png'
 import commPartner3 from '../../img/sponsors/cotm.png'
@@ -127,6 +128,9 @@ export default function Sponsors() {
                                         </div>
                                         <div className="col-4 col-md-5 col-lg-3 my-3 my-md-0">
                                             <img src={mediaPartner2} alt="Sponsor Logo" className="w-100" />
+                                        </div>
+                                        <div className="col-4 col-md-5 col-lg-3 my-3 my-md-0">
+                                            <img src={mediaPartner3} alt="Sponsor Logo" className="w-100" />
                                         </div>
                                     </div>
                                 </div>
