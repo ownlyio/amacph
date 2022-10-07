@@ -91,18 +91,11 @@ export default function Navbar({ isLoading, showRegister }) {
                                 EVENTS
                             </a>
                         </li>
-                        <li className="main-nav dropdown-center">
-                            <a className="nav-link dropdown-toggle text-color-6 font-size-120" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                GET INVOLVED
-                            </a>
-                            <ul className="dropdown-menu">
-                                <li className="sub-nav my-2"><HashLink className="text-color-6 font-size-110 amac-drop" smooth to="/#apply-merchant" scroll={el => scrollWithOffset(el)}>Become a Merchant</HashLink></li>
-                                <li className="sub-nav my-2"><HashLink className="text-color-6 font-size-110 amac-drop" smooth to="/#apply-sponsor" scroll={el => scrollWithOffset(el)}>Become a Sponsor</HashLink></li>
-                                <li className="sub-nav my-2"><HashLink className="text-color-6 font-size-110 amac-drop" smooth to="/#exhibition" scroll={el => scrollWithOffset(el)}>Open Call for Artists</HashLink></li>
-                            </ul>
-                        </li>
                         <li className="main-nav">
                             <HashLink className="text-color-6 font-size-120" smooth to="/#tickets" scroll={el => scrollWithOffset(el)}>TICKETS</HashLink>
+                        </li>
+                        <li className="main-nav">
+                            <HashLink className="text-color-6 font-size-120" smooth to="/#schedule" scroll={el => scrollWithOffset(el)}>SCHEDULE</HashLink>
                         </li>
                         <li className="main-nav">
                             <HashLink className="text-color-6 font-size-120" smooth to="/#partners" scroll={el => scrollWithOffset(el)}>PARTNERS</HashLink>
@@ -136,9 +129,7 @@ export default function Navbar({ isLoading, showRegister }) {
                         <HashLink smooth to="/#speakers" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">SPEAKERS</HashLink>
                         <a href="/event-details" className="btn text-start px-0 py-3 amac-link-mobile">EVENTS</a>
                         <HashLink smooth to="/#tickets" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">TICKETS</HashLink>
-                        <HashLink smooth to="/#apply-merchant" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">BECOME A MERCHANT</HashLink>
-                        <HashLink smooth to="/#apply-sponsor" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">BECOME A SPONSOR</HashLink>
-                        <HashLink smooth to="/#exhibition" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">OPEN CALL FOR ARTISTS</HashLink>
+                        <HashLink smooth to="/#schedule" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">SCHEDULE</HashLink>
                         <HashLink smooth to="/#partners" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">PARTNERS</HashLink>
                         <HashLink smooth to="/#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
                         { isLoading ? (
