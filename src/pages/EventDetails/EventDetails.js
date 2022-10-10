@@ -47,7 +47,7 @@ export default function EventDetails({ state, showRegister }) {
                     <div className="row flex-column justify-content-between h-100">
                         <p className="text-center text-md-start font-size-180 font-size-md-250 font-size-lg-320 text-white arvo-bold schedule-title mb-2">ART TALKS</p>
                         <div className="text-center text-md-start">
-                            <button onClick={showRegister} className="def btn btn-custom-2 px-5" disabled={state.isSoldOut}>{state.isSoldOut ? "SOLD OUT" : "BUY TICKETS"}</button>
+                            <button className="def btn btn-custom-2 px-5" disabled={true}>REGISTRATION CLOSED</button>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,8 @@ export default function EventDetails({ state, showRegister }) {
                             <p className="text-center font-size-100 text-white neo-regular">TARA PHOTOWALK TAYO</p>
                         </div>
                         <div className="text-center text-md-start">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScQ8iqcDUC5ld9jtWiXudTX7IsvgraWyYbzouhCIhpuEoFnGA/viewform?fbclid=IwAR1wh3OhwUkyxS_0QapnIpfzod4V_Edn5e6LMBstflnD1ypyRO6_A9d8Trk" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">PRE-REGISTER</a>
+                            {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLScQ8iqcDUC5ld9jtWiXudTX7IsvgraWyYbzouhCIhpuEoFnGA/viewform?fbclid=IwAR1wh3OhwUkyxS_0QapnIpfzod4V_Edn5e6LMBstflnD1ypyRO6_A9d8Trk" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">PRE-REGISTER</a> */}
+                            <button className="def btn btn-custom-2 px-5" disabled={true}>REGISTRATION CLOSED</button>
                         </div>
                     </div>
                 </div>
@@ -92,7 +93,7 @@ export default function EventDetails({ state, showRegister }) {
                         <p className="text-center text-md-start font-size-180 font-size-md-250 font-size-lg-320 text-white arvo-bold schedule-title mb-2">COLORING FOR KIDS</p>
                         <div className="text-center text-md-start">
                             {/* <a href="#" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">REGISTRATION TBA</a> */}
-                            <button type="button" className="def btn btn-custom-2 px-5">REGISTRATION TBA</button>
+                            <button className="def btn btn-custom-2 px-5" disabled={true}>REGISTRATION CLOSED</button>
                         </div>
                     </div>
                 </div>
@@ -103,7 +104,7 @@ export default function EventDetails({ state, showRegister }) {
                         <p className="text-center text-md-start font-size-180 font-size-md-250 font-size-lg-320 text-white arvo-bold schedule-title mb-2">MUSIC JAM &amp; OPEN MIC</p>
                         <div className="text-center text-md-start">
                             {/* <a href="#" target="_blank" rel="noreferrer" className="def btn btn-custom-2 px-5">REGISTRATION TBA</a> */}
-                            <button type="button" className="def btn btn-custom-2 px-5">REGISTRATION TBA</button>
+                            <button className="def btn btn-custom-2 px-5" disabled={true}>REGISTRATION CLOSED</button>
                         </div>
                     </div>
                 </div>

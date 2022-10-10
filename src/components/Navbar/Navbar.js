@@ -103,7 +103,7 @@ export default function Navbar({ isLoading, showRegister }) {
                         <li className="main-nav">
                             <HashLink className="text-color-6 font-size-120" smooth to="/#faq" scroll={el => scrollWithOffset(el)}>FAQ</HashLink>
                         </li>
-                        <li className="main-nav">
+                        {/* <li className="main-nav">
                             { isLoading ? (
                                 <button className="btn amac-nav-btn btn-custom-2 px-4" disabled>
                                     <FontAwesomeIcon icon={faSpinner} spin />
@@ -113,7 +113,7 @@ export default function Navbar({ isLoading, showRegister }) {
                                     BUY TICKETS
                                 </button>
                             )}
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 <div className="d-lg-none align-self-end">
@@ -132,7 +132,7 @@ export default function Navbar({ isLoading, showRegister }) {
                         <HashLink smooth to="/#schedule" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">SCHEDULE</HashLink>
                         <HashLink smooth to="/#partners" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">PARTNERS</HashLink>
                         <HashLink smooth to="/#faq" scroll={el => scrollWithOffset(el)} onClick={() => closeMenu()} className="text-color-6 font-size-90 d-block py-3 w-100 text-decoration-none">FAQ</HashLink>
-                        { isLoading ? (
+                        {/* { isLoading ? (
                             <button className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-180 w-100" disabled>
                                 <FontAwesomeIcon icon={faSpinner} spin />
                             </button>
@@ -140,7 +140,7 @@ export default function Navbar({ isLoading, showRegister }) {
                             <button onClick={showRegister} type="button" className="btn amac-nav-btn-mobile btn-custom-2 mt-3 px-4 py-3 font-size-180 w-100">
                                 BUY TICKETS
                             </button>
-                        )}
+                        )} */}
                     </Menu>
                 </div>
             </div>

@@ -25,7 +25,7 @@ export default function Banner({ isLoading, showRegister }) {
                             <FontAwesomeIcon icon={faSpinner} spin />
                         </button>
                     ) : (
-                        <button onClick={showRegister} className="def btn btn-custom-1 px-5 mb-3 banner-btn">BUY TICKETS</button>
+                        <button disabled={true} className="def btn btn-custom-1 px-5 mb-3 banner-btn">REGISTRATION CLOSED</button>
                     )}
                     <p className="font-size-80 font-size-md-100 neo-regular-italic text-center text-white mb-0 banner-text">Note: Only the Art Talks are ticketed. Other activities are open and free for everyone in the community.</p>
                 </div>

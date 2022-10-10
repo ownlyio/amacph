@@ -97,7 +97,7 @@ export default function ApplyTicket({ isLoading, isSoldOut, showRegister }) {
                                         <FontAwesomeIcon icon={faSpinner} spin />
                                     </button>
                                 ) : (
-                                    <button onClick={showRegister} className="def btn btn-custom-4 px-5 ticket-btn" disabled={isSoldOut}>{isSoldOut ? "SOLD OUT" : "SECURE YOUR PASS"}</button>
+                                    <button className="def btn btn-custom-4 px-5 ticket-btn" disabled={true}>REGISTRATION CLOSED</button>
                                 )}
                             </div>
                         </div>
